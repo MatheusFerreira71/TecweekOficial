@@ -1,0 +1,47 @@
+C:\Users\Matheus\OneDrive - Fatec Centro Paula Souza\FATEC\TECWEEK\Sistema Tecweek\Sistema Tecweek\bin\Debug\Sistema Tecweek.exe.config
+C:\Users\Matheus\OneDrive - Fatec Centro Paula Souza\FATEC\TECWEEK\Sistema Tecweek\Sistema Tecweek\bin\Debug\Sistema Tecweek.exe
+C:\Users\Matheus\OneDrive - Fatec Centro Paula Souza\FATEC\TECWEEK\Sistema Tecweek\Sistema Tecweek\bin\Debug\Sistema Tecweek.pdb
+C:\Users\Matheus\OneDrive - Fatec Centro Paula Souza\FATEC\TECWEEK\Sistema Tecweek\Sistema Tecweek\obj\Debug\Sistema Tecweek.csprojAssemblyReference.cache
+C:\Users\Matheus\OneDrive - Fatec Centro Paula Souza\FATEC\TECWEEK\Sistema Tecweek\Sistema Tecweek\obj\Debug\Sistema_Tecweek.frm_telaPrincipal.resources
+C:\Users\Matheus\OneDrive - Fatec Centro Paula Souza\FATEC\TECWEEK\Sistema Tecweek\Sistema Tecweek\obj\Debug\Sistema_Tecweek.Properties.Resources.resources
+C:\Users\Matheus\OneDrive - Fatec Centro Paula Souza\FATEC\TECWEEK\Sistema Tecweek\Sistema Tecweek\obj\Debug\Sistema Tecweek.csproj.GenerateResource.cache
+C:\Users\Matheus\OneDrive - Fatec Centro Paula Souza\FATEC\TECWEEK\Sistema Tecweek\Sistema Tecweek\obj\Debug\Sistema Tecweek.csproj.CoreCompileInputs.cache
+C:\Users\Matheus\OneDrive - Fatec Centro Paula Souza\FATEC\TECWEEK\Sistema Tecweek\Sistema Tecweek\obj\Debug\Sistema Tecweek.exe
+C:\Users\Matheus\OneDrive - Fatec Centro Paula Souza\FATEC\TECWEEK\Sistema Tecweek\Sistema Tecweek\obj\Debug\Sistema Tecweek.pdb
+C:\Users\Matheus\OneDrive - Fatec Centro Paula Souza\FATEC\TECWEEK\Sistema Tecweek\Sistema Tecweek\obj\Debug\Sistema_Tecweek.frm_cadastroAluno.resources
+C:\Users\Matheus\OneDrive - Fatec Centro Paula Souza\FATEC\TECWEEK\Sistema Tecweek\Sistema Tecweek\obj\Debug\Sistema_Tecweek.frm_Curso.resources
+C:\Users\Matheus\OneDrive - Fatec Centro Paula Souza\FATEC\TECWEEK\Sistema Tecweek\Sistema Tecweek\obj\Debug\Sistema_Tecweek.frm_Periodo.resources
+C:\Users\Matheus\OneDrive - Fatec Centro Paula Souza\FATEC\TECWEEK\Sistema Tecweek\Sistema Tecweek\obj\Debug\Sistema_Tecweek.frm_Semestre.resources
+C:\Users\1090481823024\Downloads\TECWEEK\TECWEEK\Sistema Tecweek\Sistema Tecweek\bin\Debug\Sistema Tecweek.exe.config
+C:\Users\1090481823024\Downloads\TECWEEK\TECWEEK\Sistema Tecweek\Sistema Tecweek\obj\Debug\Sistema Tecweek.exe
+C:\Users\1090481823024\Downloads\TECWEEK\TECWEEK\Sistema Tecweek\Sistema Tecweek\obj\Debug\Sistema Tecweek.pdb
+C:\Users\1090481823024\Downloads\TECWEEK\TECWEEK\Sistema Tecweek\Sistema Tecweek\bin\Debug\Sistema Tecweek.exe
+C:\Users\1090481823024\Downloads\TECWEEK\TECWEEK\Sistema Tecweek\Sistema Tecweek\bin\Debug\Sistema Tecweek.pdb
+C:\Users\1090481823024\Downloads\TECWEEK\TECWEEK\Sistema Tecweek\Sistema Tecweek\obj\Debug\Sistema Tecweek.csprojResolveAssemblyReference.cache
+C:\Users\1090481823024\Downloads\TECWEEK\TECWEEK\Sistema Tecweek\Sistema Tecweek\obj\Debug\Sistema_Tecweek.frm_cadastroAluno.resources
+C:\Users\1090481823024\Downloads\TECWEEK\TECWEEK\Sistema Tecweek\Sistema Tecweek\obj\Debug\Sistema_Tecweek.frm_Curso.resources
+C:\Users\1090481823024\Downloads\TECWEEK\TECWEEK\Sistema Tecweek\Sistema Tecweek\obj\Debug\Sistema_Tecweek.frm_Periodo.resources
+C:\Users\1090481823024\Downloads\TECWEEK\TECWEEK\Sistema Tecweek\Sistema Tecweek\obj\Debug\Sistema_Tecweek.frm_Semestre.resources
+C:\Users\1090481823024\Downloads\TECWEEK\TECWEEK\Sistema Tecweek\Sistema Tecweek\obj\Debug\Sistema_Tecweek.frm_telaPrincipal.resources
+C:\Users\1090481823024\Downloads\TECWEEK\TECWEEK\Sistema Tecweek\Sistema Tecweek\obj\Debug\Sistema_Tecweek.Properties.Resources.resources
+C:\Users\1090481823024\Downloads\TECWEEK\TECWEEK\Sistema Tecweek\Sistema Tecweek\obj\Debug\Sistema Tecweek.csproj.GenerateResource.Cache
+C:\Users\Matheus\OneDrive - Fatec Centro Paula Souza\FATEC\TECWEEK\TECWEEK\Sistema Tecweek\Sistema Tecweek\bin\Debug\Sistema Tecweek.exe.config
+C:\Users\Matheus\OneDrive - Fatec Centro Paula Souza\FATEC\TECWEEK\TECWEEK\Sistema Tecweek\Sistema Tecweek\bin\Debug\Sistema Tecweek.exe
+C:\Users\Matheus\OneDrive - Fatec Centro Paula Souza\FATEC\TECWEEK\TECWEEK\Sistema Tecweek\Sistema Tecweek\bin\Debug\Sistema Tecweek.pdb
+C:\Users\Matheus\OneDrive - Fatec Centro Paula Souza\FATEC\TECWEEK\TECWEEK\Sistema Tecweek\Sistema Tecweek\obj\Debug\Sistema Tecweek.csprojAssemblyReference.cache
+C:\Users\Matheus\OneDrive - Fatec Centro Paula Souza\FATEC\TECWEEK\TECWEEK\Sistema Tecweek\Sistema Tecweek\obj\Debug\Sistema_Tecweek.frm_cadastroParticipantes.resources
+C:\Users\Matheus\OneDrive - Fatec Centro Paula Souza\FATEC\TECWEEK\TECWEEK\Sistema Tecweek\Sistema Tecweek\obj\Debug\Sistema_Tecweek.frm_Escolaridade.resources
+C:\Users\Matheus\OneDrive - Fatec Centro Paula Souza\FATEC\TECWEEK\TECWEEK\Sistema Tecweek\Sistema Tecweek\obj\Debug\Sistema_Tecweek.frm_CPF.resources
+C:\Users\Matheus\OneDrive - Fatec Centro Paula Souza\FATEC\TECWEEK\TECWEEK\Sistema Tecweek\Sistema Tecweek\obj\Debug\Sistema_Tecweek.frm_telaPrincipal.resources
+C:\Users\Matheus\OneDrive - Fatec Centro Paula Souza\FATEC\TECWEEK\TECWEEK\Sistema Tecweek\Sistema Tecweek\obj\Debug\Sistema_Tecweek.Properties.Resources.resources
+C:\Users\Matheus\OneDrive - Fatec Centro Paula Souza\FATEC\TECWEEK\TECWEEK\Sistema Tecweek\Sistema Tecweek\obj\Debug\Sistema Tecweek.csproj.GenerateResource.cache
+C:\Users\Matheus\OneDrive - Fatec Centro Paula Souza\FATEC\TECWEEK\TECWEEK\Sistema Tecweek\Sistema Tecweek\obj\Debug\Sistema Tecweek.csproj.CoreCompileInputs.cache
+C:\Users\Matheus\OneDrive - Fatec Centro Paula Souza\FATEC\TECWEEK\TECWEEK\Sistema Tecweek\Sistema Tecweek\obj\Debug\Sistema Tecweek.exe
+C:\Users\Matheus\OneDrive - Fatec Centro Paula Souza\FATEC\TECWEEK\TECWEEK\Sistema Tecweek\Sistema Tecweek\obj\Debug\Sistema Tecweek.pdb
+C:\Users\Matheus\OneDrive - Fatec Centro Paula Souza\FATEC\TECWEEK\TECWEEK\Sistema Tecweek\Sistema Tecweek\bin\Debug\Tecweek Modelo.dll
+C:\Users\Matheus\OneDrive - Fatec Centro Paula Souza\FATEC\TECWEEK\TECWEEK\Sistema Tecweek\Sistema Tecweek\bin\Debug\TecweekDAL.dll
+C:\Users\Matheus\OneDrive - Fatec Centro Paula Souza\FATEC\TECWEEK\TECWEEK\Sistema Tecweek\Sistema Tecweek\bin\Debug\TecweekDLL.dll
+C:\Users\Matheus\OneDrive - Fatec Centro Paula Souza\FATEC\TECWEEK\TECWEEK\Sistema Tecweek\Sistema Tecweek\bin\Debug\Tecweek Modelo.pdb
+C:\Users\Matheus\OneDrive - Fatec Centro Paula Souza\FATEC\TECWEEK\TECWEEK\Sistema Tecweek\Sistema Tecweek\bin\Debug\TecweekDAL.pdb
+C:\Users\Matheus\OneDrive - Fatec Centro Paula Souza\FATEC\TECWEEK\TECWEEK\Sistema Tecweek\Sistema Tecweek\bin\Debug\TecweekDLL.pdb
+C:\Users\Matheus\OneDrive - Fatec Centro Paula Souza\FATEC\TECWEEK\TECWEEK\Sistema Tecweek\Sistema Tecweek\obj\Debug\Sistema Tecweek.csproj.CopyComplete

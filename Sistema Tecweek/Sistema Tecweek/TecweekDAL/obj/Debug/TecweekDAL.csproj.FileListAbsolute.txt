@@ -1,0 +1,9 @@
+C:\Users\Matheus\OneDrive - Fatec Centro Paula Souza\FATEC\TECWEEK\TECWEEK\Sistema Tecweek\Sistema Tecweek\TecweekDAL\bin\Debug\TecweekDAL.dll
+C:\Users\Matheus\OneDrive - Fatec Centro Paula Souza\FATEC\TECWEEK\TECWEEK\Sistema Tecweek\Sistema Tecweek\TecweekDAL\bin\Debug\TecweekDAL.pdb
+C:\Users\Matheus\OneDrive - Fatec Centro Paula Souza\FATEC\TECWEEK\TECWEEK\Sistema Tecweek\Sistema Tecweek\TecweekDAL\bin\Debug\Tecweek Modelo.dll
+C:\Users\Matheus\OneDrive - Fatec Centro Paula Souza\FATEC\TECWEEK\TECWEEK\Sistema Tecweek\Sistema Tecweek\TecweekDAL\bin\Debug\Tecweek Modelo.pdb
+C:\Users\Matheus\OneDrive - Fatec Centro Paula Souza\FATEC\TECWEEK\TECWEEK\Sistema Tecweek\Sistema Tecweek\TecweekDAL\obj\Debug\TecweekDAL.csprojAssemblyReference.cache
+C:\Users\Matheus\OneDrive - Fatec Centro Paula Souza\FATEC\TECWEEK\TECWEEK\Sistema Tecweek\Sistema Tecweek\TecweekDAL\obj\Debug\TecweekDAL.csproj.CoreCompileInputs.cache
+C:\Users\Matheus\OneDrive - Fatec Centro Paula Souza\FATEC\TECWEEK\TECWEEK\Sistema Tecweek\Sistema Tecweek\TecweekDAL\obj\Debug\TecweekDAL.csproj.CopyComplete
+C:\Users\Matheus\OneDrive - Fatec Centro Paula Souza\FATEC\TECWEEK\TECWEEK\Sistema Tecweek\Sistema Tecweek\TecweekDAL\obj\Debug\TecweekDAL.dll
+C:\Users\Matheus\OneDrive - Fatec Centro Paula Souza\FATEC\TECWEEK\TECWEEK\Sistema Tecweek\Sistema Tecweek\TecweekDAL\obj\Debug\TecweekDAL.pdb

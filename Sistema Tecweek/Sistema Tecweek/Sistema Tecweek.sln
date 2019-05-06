@@ -1,0 +1,43 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.572
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sistema Tecweek", "Sistema Tecweek.csproj", "{7D538548-7012-4605-82E5-583B8E6BEFB5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TecweekDAL", "TecweekDAL\TecweekDAL.csproj", "{BE329477-D85C-4C5F-96EA-1B202B385364}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tecweek Modelo", "..\Tecweek Modelo\Tecweek Modelo.csproj", "{454CD606-B334-46CD-8F53-261495029774}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TecweekBLL", "TecweekDLL\TecweekBLL.csproj", "{F09D8C7A-9930-4B60-AF46-7C997541B1CC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7D538548-7012-4605-82E5-583B8E6BEFB5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7D538548-7012-4605-82E5-583B8E6BEFB5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7D538548-7012-4605-82E5-583B8E6BEFB5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7D538548-7012-4605-82E5-583B8E6BEFB5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BE329477-D85C-4C5F-96EA-1B202B385364}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BE329477-D85C-4C5F-96EA-1B202B385364}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BE329477-D85C-4C5F-96EA-1B202B385364}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BE329477-D85C-4C5F-96EA-1B202B385364}.Release|Any CPU.Build.0 = Release|Any CPU
+		{454CD606-B334-46CD-8F53-261495029774}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{454CD606-B334-46CD-8F53-261495029774}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{454CD606-B334-46CD-8F53-261495029774}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{454CD606-B334-46CD-8F53-261495029774}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F09D8C7A-9930-4B60-AF46-7C997541B1CC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F09D8C7A-9930-4B60-AF46-7C997541B1CC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F09D8C7A-9930-4B60-AF46-7C997541B1CC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F09D8C7A-9930-4B60-AF46-7C997541B1CC}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {523EEDE4-4996-433C-9D17-DE57E3F82F87}
+	EndGlobalSection
+EndGlobal
