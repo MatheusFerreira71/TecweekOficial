@@ -122,6 +122,7 @@
             this.Btn_escolaNovo.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.Btn_escolaNovo.TextImageRelation = System.Windows.Forms.TextImageRelation.TextAboveImage;
             this.Btn_escolaNovo.UseVisualStyleBackColor = true;
+            this.Btn_escolaNovo.Click += new System.EventHandler(this.Btn_escolaNovo_Click);
             // 
             // Btn_escolaExcluir
             // 
@@ -163,6 +164,7 @@
             this.Btn_escolaCancelar.Text = "Cancelar";
             this.Btn_escolaCancelar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.Btn_escolaCancelar.UseVisualStyleBackColor = true;
+            this.Btn_escolaCancelar.Click += new System.EventHandler(this.Btn_escolaCancelar_Click);
             // 
             // Btn_escolaSalvar
             // 
@@ -178,6 +180,7 @@
             this.Btn_escolaSalvar.Text = "Gravar";
             this.Btn_escolaSalvar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.Btn_escolaSalvar.UseVisualStyleBackColor = true;
+            this.Btn_escolaSalvar.Click += new System.EventHandler(this.Btn_escolaSalvar_Click);
             // 
             // label1
             // 
@@ -239,6 +242,7 @@
             this.Name = "frm_Escolaridade";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Cadastro de Escolaridade";
+            this.Load += new System.EventHandler(this.frm_Escolaridade_Load);
             this.panel1.ResumeLayout(false);
             this.splitContainer1.Panel1.ResumeLayout(false);
             this.splitContainer1.Panel2.ResumeLayout(false);

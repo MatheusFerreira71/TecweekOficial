@@ -20,19 +20,19 @@ namespace Sistema_Tecweek
         private void alunosToolStripMenuItem_Click(object sender, EventArgs e)
         {
             frm_cadastroParticipantes cadastroPartic = new frm_cadastroParticipantes();
-            cadastroPartic.Show();
+            cadastroPartic.ShowDialog();
         }
 
         private void toolStripMenuItem1_Click(object sender, EventArgs e)
         {
-            frm_Escolaridade escola = new frm_Escolaridade();
-            escola.Show();
+            frm_Escolaridade escolaridade = new frm_Escolaridade();
+            escolaridade.ShowDialog();
         }
 
         private void períodosToolStripMenuItem_Click(object sender, EventArgs e)
         {
             frm_CPF cPF = new frm_CPF();
-            cPF.Show();
+            cPF.ShowDialog();
         }
     }
 }
