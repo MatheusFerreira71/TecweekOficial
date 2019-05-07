@@ -6,6 +6,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Tecweek_Modelo;
 using TecweekDAL;
+
 namespace TecweekDLL
 {
     public class BLLEscolaridade

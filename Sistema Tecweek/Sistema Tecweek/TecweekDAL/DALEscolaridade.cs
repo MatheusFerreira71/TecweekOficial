@@ -20,7 +20,7 @@ namespace TecweekDAL
             SqlCommand cmd = new SqlCommand
             {
                 Connection = conexao.ObjetoConexao,
-                CommandText = "insert into TBEscolaridade(Escolaridade) values (@nome); select @@IDENTITY;"
+                CommandText = "insert into TBEscolaridade(Nome) values (@nome); select @@IDENTITY;"
             };
             cmd.Parameters.AddWithValue("@nome", modelo.escNome);
             conexao.Conectar();
@@ -32,7 +32,7 @@ namespace TecweekDAL
             SqlCommand cmd = new SqlCommand
             {
                 Connection = conexao.ObjetoConexao,
-                CommandText = "update TBEscolaridade set Escolaridade = @nome where Codigo = @codigo;"
+                CommandText = "update TBEscolaridade set Nome = @nome where Codigo = @codigo;"
 
             };
             cmd.Parameters.AddWithValue("@nome", modelo.escNome);
@@ -56,7 +56,7 @@ namespace TecweekDAL
         public DataTable Localizar(String valor)
         {
             DataTable tabela = new DataTable();
-            SqlDataAdapter da = new SqlDataAdapter("Select * from TBEscolaridade where Escolaridade like '%" + valor
+            SqlDataAdapter da = new SqlDataAdapter("Select * from TBEscolaridade where Nome like '%" + valor
                 + "%'", conexao.StringConexao);
             da.Fill(tabela);
             return tabela;
@@ -75,7 +75,7 @@ namespace TecweekDAL
             {
                 registro.Read();
                 modelo.escCod = Convert.ToInt32(registro["Codigo"]);
-                modelo.escNome = Convert.ToString(registro["Escolaridade"]);
+                modelo.escNome = Convert.ToString(registro["Nome"]);
             }
             conexao.Desconectar();
             return modelo;

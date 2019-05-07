@@ -8,6 +8,8 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using Tecweek_Modelo;
+using TecweekDAL;
+using TecweekDLL;
 
 namespace Sistema_Tecweek
 {
@@ -70,8 +72,10 @@ namespace Sistema_Tecweek
 
         private void Btn_escolaNovo_Click(object sender, EventArgs e)
         {
+            modeloEscolaridade modelo = new modeloEscolaridade();
             this.operacao = "inserir";
             this.alterarBotao(true);
+            Txt_escolaCod.Text = modelo.escCod.ToString();
         }
 
         private void Btn_escolaCancelar_Click(object sender, EventArgs e)
@@ -94,13 +98,35 @@ namespace Sistema_Tecweek
 
         private void Btn_escolaSalvar_Click(object sender, EventArgs e)
         {
-            modeloEscolaridade modelo = new modeloEscolaridade
+            try
             {
-                escNome = Txt_escolaNome.Text
-            };
-            if(this.operacao == "inserir")
+                modeloEscolaridade modelo = new modeloEscolaridade
+                {
+                    escNome = Txt_escolaNome.Text
+                };
+                DALConexoes cx = new DALConexoes(DadosDaConexão.StringDeConexão); //Objetos para gravar os dados;
+                BLLEscolaridade blE = new BLLEscolaridade(cx);
+
+                if (this.operacao == "inserir") // Cadastra no banco a escolaridade.
+                {
+                    blE.Incluir(modelo);
+                    MessageBox.Show("Gravado com Sucesso! Código: " + modelo.escCod.ToString(), "Informativo", 
+                        MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
+                }
+                else // Altera no banco a escolaridade
+                {
+                    modelo.escCod = Convert.ToInt32(Txt_escolaCod.Text);
+                    blE.Alterar(modelo);
+                    MessageBox.Show("Editado com Sucesso!", "Informativo", MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
+                }
+
+                this.limpaTela();
+                this.alterarBotao(false);
+
+            }
+            catch (Exception ex)
             {
-                // cadastra no banco a escolaridade.
+                MessageBox.Show(ex.Message,"Informativo",MessageBoxButtons.OK,MessageBoxIcon.Error);
             }
         }
     }
