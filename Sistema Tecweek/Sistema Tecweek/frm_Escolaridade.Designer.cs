@@ -28,6 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
             this.Txt_escolaPesquisar = new System.Windows.Forms.TextBox();
             this.panel1 = new System.Windows.Forms.Panel();
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
@@ -37,9 +39,7 @@
             this.panel2 = new System.Windows.Forms.Panel();
             this.Btn_escolaCancelar = new System.Windows.Forms.Button();
             this.Btn_escolaSalvar = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.Txt_escolaCod = new System.Windows.Forms.TextBox();
             this.Txt_escolaNome = new System.Windows.Forms.TextBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.panel1.SuspendLayout();
@@ -59,6 +59,7 @@
             this.Txt_escolaPesquisar.Size = new System.Drawing.Size(173, 20);
             this.Txt_escolaPesquisar.TabIndex = 1;
             this.Txt_escolaPesquisar.Text = "Digite para pesquisar...";
+            this.Txt_escolaPesquisar.TextChanged += new System.EventHandler(this.Txt_escolaPesquisar_TextChanged);
             this.Txt_escolaPesquisar.Enter += new System.EventHandler(this.Txt_pesquisar_Enter);
             this.Txt_escolaPesquisar.Leave += new System.EventHandler(this.Txt_pesquisar_Leave);
             // 
@@ -105,6 +106,7 @@
             this.Btn_escolaEditar.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.Btn_escolaEditar.TextImageRelation = System.Windows.Forms.TextImageRelation.TextAboveImage;
             this.Btn_escolaEditar.UseVisualStyleBackColor = true;
+            this.Btn_escolaEditar.Click += new System.EventHandler(this.Btn_escolaEditar_Click);
             // 
             // Btn_escolaNovo
             // 
@@ -140,6 +142,7 @@
             this.Btn_escolaExcluir.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.Btn_escolaExcluir.TextImageRelation = System.Windows.Forms.TextImageRelation.TextAboveImage;
             this.Btn_escolaExcluir.UseVisualStyleBackColor = true;
+            this.Btn_escolaExcluir.Click += new System.EventHandler(this.Btn_escolaExcluir_Click);
             // 
             // panel2
             // 
@@ -182,46 +185,49 @@
             this.Btn_escolaSalvar.UseVisualStyleBackColor = true;
             this.Btn_escolaSalvar.Click += new System.EventHandler(this.Btn_escolaSalvar_Click);
             // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Tai Le", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(18, 95);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(56, 16);
-            this.label1.TabIndex = 4;
-            this.label1.Text = "Código:";
-            // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Tai Le", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(18, 123);
+            this.label2.Location = new System.Drawing.Point(12, 107);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(47, 16);
+            this.label2.Size = new System.Drawing.Size(89, 16);
             this.label2.TabIndex = 5;
-            this.label2.Text = "Curso:";
-            // 
-            // Txt_escolaCod
-            // 
-            this.Txt_escolaCod.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.Txt_escolaCod.Location = new System.Drawing.Point(80, 95);
-            this.Txt_escolaCod.Name = "Txt_escolaCod";
-            this.Txt_escolaCod.ReadOnly = true;
-            this.Txt_escolaCod.Size = new System.Drawing.Size(100, 20);
-            this.Txt_escolaCod.TabIndex = 6;
+            this.label2.Text = "Escolaridade:";
             // 
             // Txt_escolaNome
             // 
-            this.Txt_escolaNome.Location = new System.Drawing.Point(80, 120);
+            this.Txt_escolaNome.Location = new System.Drawing.Point(107, 105);
             this.Txt_escolaNome.Name = "Txt_escolaNome";
             this.Txt_escolaNome.Size = new System.Drawing.Size(204, 20);
             this.Txt_escolaNome.TabIndex = 7;
             // 
             // dataGridView1
             // 
+            this.dataGridView1.AllowUserToOrderColumns = true;
+            this.dataGridView1.AllowUserToResizeColumns = false;
+            this.dataGridView1.AllowUserToResizeRows = false;
+            dataGridViewCellStyle5.BackColor = System.Drawing.Color.DarkCyan;
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("Microsoft Tai Le", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.Color.White;
+            this.dataGridView1.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle5;
+            this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dataGridView1.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle6.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("Microsoft Tai Le", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle6.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridView1.DefaultCellStyle = dataGridViewCellStyle6;
+            this.dataGridView1.EditMode = System.Windows.Forms.DataGridViewEditMode.EditProgrammatically;
+            this.dataGridView1.GridColor = System.Drawing.SystemColors.ButtonHighlight;
             this.dataGridView1.Location = new System.Drawing.Point(12, 161);
+            this.dataGridView1.MultiSelect = false;
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.Size = new System.Drawing.Size(531, 150);
             this.dataGridView1.TabIndex = 8;
@@ -234,9 +240,7 @@
             this.ClientSize = new System.Drawing.Size(558, 373);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.Txt_escolaNome);
-            this.Controls.Add(this.Txt_escolaCod);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Name = "frm_Escolaridade";
@@ -267,9 +271,7 @@
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Button Btn_escolaCancelar;
         private System.Windows.Forms.Button Btn_escolaSalvar;
-        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox Txt_escolaCod;
         private System.Windows.Forms.TextBox Txt_escolaNome;
         private System.Windows.Forms.DataGridView dataGridView1;
     }
