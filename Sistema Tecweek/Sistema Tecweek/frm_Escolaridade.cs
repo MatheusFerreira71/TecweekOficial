@@ -145,7 +145,7 @@ namespace Sistema_Tecweek
             }
             catch (Exception ex)
             {
-                MessageBox.Show(ex.Message,"Informativo",MessageBoxButtons.OK,MessageBoxIcon.Error);
+                MessageBox.Show(ex.Message,"ERRO!",MessageBoxButtons.OK,MessageBoxIcon.Error);
             }
         }
 

@@ -64,7 +64,6 @@ namespace TecweekDAL
             return tabela;
         }
 
-
         public ModeloCPF CarregaModeloCPF(int Codigo)
         {
             ModeloCPF modelo = new ModeloCPF();
