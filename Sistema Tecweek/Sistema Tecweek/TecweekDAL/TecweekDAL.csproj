@@ -45,6 +45,7 @@
     <Compile Include="DALConexoes.cs" />
     <Compile Include="DALCpf.cs" />
     <Compile Include="DALEscolaridade.cs" />
+    <Compile Include="DALPalestra.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

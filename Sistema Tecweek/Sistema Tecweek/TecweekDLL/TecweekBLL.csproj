@@ -43,6 +43,7 @@
   <ItemGroup>
     <Compile Include="BLLCpf.cs" />
     <Compile Include="BLLEscolaridade.cs" />
+    <Compile Include="BLLPalestra.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
