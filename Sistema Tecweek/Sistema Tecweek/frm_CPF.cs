@@ -51,6 +51,82 @@ namespace Sistema_Tecweek
         {
             Txt_cpfNome.Clear();
         }
+
+        public bool CPF_Valido(String cpf)
+        {
+            bool[] verificador;
+            verificador = new bool[2];
+            int[] CPF_Vetor;
+            CPF_Vetor = new int[11];
+            int calculo = 0, aux = 10;
+            for (int i = 0; i < 11; i++)
+            {
+                CPF_Vetor[i] = Convert.ToInt32(cpf[i].ToString());
+            }
+            for (int i = 0; i <= 8; i++)
+            {
+                calculo += CPF_Vetor[i] * aux;
+                aux -= 1;
+            }
+            calculo *= 10;
+            calculo %= 11;
+            if (calculo == 10)
+            {
+                calculo = 0;
+            }
+            if (calculo == CPF_Vetor[9])
+            {
+                verificador[0] = true;
+            }
+            else
+            {
+                verificador[0] = false;
+            }
+            calculo = 0;
+            aux = 11;
+            for (int i = 0; i <= 9; i++)
+            {
+                calculo += CPF_Vetor[i] * aux;
+                aux -= 1;
+            }
+            calculo *= 10;
+            calculo %= 11;
+            if (calculo == 10)
+            {
+                calculo = 0;
+            }
+            if (calculo == CPF_Vetor[10])
+            {
+                verificador[1] = true;
+            }
+            else
+            {
+                verificador[0] = false;
+            }
+            if (
+                CPF_Vetor[0] == CPF_Vetor[1]
+                && CPF_Vetor[1] == CPF_Vetor[2]
+                && CPF_Vetor[2] == CPF_Vetor[3]
+                && CPF_Vetor[3] == CPF_Vetor[4]
+                && CPF_Vetor[4] == CPF_Vetor[5]
+                && CPF_Vetor[5] == CPF_Vetor[6]
+                && CPF_Vetor[6] == CPF_Vetor[7]
+                && CPF_Vetor[7] == CPF_Vetor[8]
+                && CPF_Vetor[8] == CPF_Vetor[9]
+                && CPF_Vetor[9] == CPF_Vetor[10]
+                )
+            {
+                return false;
+            }
+            else if(verificador[0] && verificador[1])
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+        }
         
         private void Txt_periodoPesquisar_Enter(object sender, EventArgs e)
         {
@@ -117,74 +193,7 @@ namespace Sistema_Tecweek
         private void Btn_cpfGravar_Click(object sender, EventArgs e)
         {
             try
-            {
-                bool[] verificador;
-                verificador = new bool[2];
-                int[] CPF_Vetor;
-                CPF_Vetor = new int[11];
-                int calculo = 0, aux = 10;
-                for (int i = 0; i < 11; i++)
-                {
-                    CPF_Vetor[i] = Convert.ToInt32(Txt_cpfNome.Text[i].ToString());
-                }
-                for (int i = 0; i <= 8; i++)
-                {
-                    calculo += CPF_Vetor[i] * aux;
-                    aux -= 1;
-                }
-                calculo *= 10;
-                calculo %= 11;
-                if (calculo == 10)
-                {
-                    calculo = 0;
-                }
-                if (calculo == CPF_Vetor[9])
-                {
-                    verificador[0] = true;
-                }
-                else
-                {
-                    verificador[0] = false;
-                }
-                calculo = 0;
-                aux = 11;
-                for (int i = 0; i <= 9; i++)
-                {
-                    calculo += CPF_Vetor[i] * aux;
-                    aux -= 1;
-                }
-                calculo *= 10;
-                calculo %= 11;
-                if (calculo == 10)
-                {
-                    calculo = 0;
-                }
-                if (calculo == CPF_Vetor[10])
-                {
-                    verificador[0] = true;
-                }
-                else
-                {
-                    verificador[0] = false;
-                }
-                if (
-                    CPF_Vetor[0] == CPF_Vetor[1]
-                    && CPF_Vetor[1] == CPF_Vetor[2]
-                    && CPF_Vetor[2] == CPF_Vetor[3]
-                    && CPF_Vetor[3] == CPF_Vetor[4]
-                    && CPF_Vetor[4] == CPF_Vetor[5]
-                    && CPF_Vetor[5] == CPF_Vetor[6]
-                    && CPF_Vetor[6] == CPF_Vetor[7]
-                    && CPF_Vetor[7] == CPF_Vetor[8]
-                    && CPF_Vetor[8] == CPF_Vetor[9]
-                    && CPF_Vetor[9] == CPF_Vetor[10]
-                    )
-                {
-                    MessageBox.Show("CPF inválido", "ERRO!", MessageBoxButtons.OK,MessageBoxIcon.Error);
-                    this.LimpaTela();
-                    this.AlterarBotao(false);
-                }
-                else if (verificador[0] && verificador[1])
+            {   if (this.CPF_Valido(Txt_cpfNome.Text))
                 {
                     ModeloCPF modelo = new ModeloCPF
                     {
@@ -229,6 +238,7 @@ namespace Sistema_Tecweek
                     this.LimpaTela();
                     this.AlterarBotao(false);
                 }
+                
             }
             catch (Exception ex)
             {

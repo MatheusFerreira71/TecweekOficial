@@ -7,3 +7,10 @@ C:\Users\Matheus\OneDrive - Fatec Centro Paula Souza\FATEC\TECWEEK\TECWEEK\Siste
 C:\Users\Matheus\OneDrive - Fatec Centro Paula Souza\FATEC\TECWEEK\TECWEEK\Sistema Tecweek\Sistema Tecweek\TecweekDAL\obj\Debug\TecweekDAL.csproj.CopyComplete
 C:\Users\Matheus\OneDrive - Fatec Centro Paula Souza\FATEC\TECWEEK\TECWEEK\Sistema Tecweek\Sistema Tecweek\TecweekDAL\obj\Debug\TecweekDAL.dll
 C:\Users\Matheus\OneDrive - Fatec Centro Paula Souza\FATEC\TECWEEK\TECWEEK\Sistema Tecweek\Sistema Tecweek\TecweekDAL\obj\Debug\TecweekDAL.pdb
+C:\Users\1090481823017\Desktop\Projetos Git\Tecweek\TecweekOficial\Sistema Tecweek\Sistema Tecweek\TecweekDAL\bin\Debug\TecweekDAL.dll
+C:\Users\1090481823017\Desktop\Projetos Git\Tecweek\TecweekOficial\Sistema Tecweek\Sistema Tecweek\TecweekDAL\bin\Debug\TecweekDAL.pdb
+C:\Users\1090481823017\Desktop\Projetos Git\Tecweek\TecweekOficial\Sistema Tecweek\Sistema Tecweek\TecweekDAL\bin\Debug\Tecweek Modelo.dll
+C:\Users\1090481823017\Desktop\Projetos Git\Tecweek\TecweekOficial\Sistema Tecweek\Sistema Tecweek\TecweekDAL\bin\Debug\Tecweek Modelo.pdb
+C:\Users\1090481823017\Desktop\Projetos Git\Tecweek\TecweekOficial\Sistema Tecweek\Sistema Tecweek\TecweekDAL\obj\Debug\TecweekDAL.csprojResolveAssemblyReference.cache
+C:\Users\1090481823017\Desktop\Projetos Git\Tecweek\TecweekOficial\Sistema Tecweek\Sistema Tecweek\TecweekDAL\obj\Debug\TecweekDAL.dll
+C:\Users\1090481823017\Desktop\Projetos Git\Tecweek\TecweekOficial\Sistema Tecweek\Sistema Tecweek\TecweekDAL\obj\Debug\TecweekDAL.pdb

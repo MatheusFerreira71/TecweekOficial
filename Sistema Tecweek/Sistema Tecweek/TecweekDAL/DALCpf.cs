@@ -36,7 +36,7 @@ namespace TecweekDAL
                 CommandText = "update TB_CPF set CPF = @CPF where Codigo = @codigo;"
 
             };
-            cmd.Parameters.AddWithValue("@nome", modelo.CpfNome);
+            cmd.Parameters.AddWithValue("@CPF", modelo.CpfNome);
             cmd.Parameters.AddWithValue("@codigo", modelo.CpfCod);
             Conexao.Conectar();
             cmd.ExecuteNonQuery();

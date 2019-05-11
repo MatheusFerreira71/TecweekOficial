@@ -20,8 +20,9 @@ namespace TecweekDLL
         {
             if (modelo.CpfNome.Trim().Length == 0)
             {
-                throw new Exception("A descrição da escolaridade é obrigatória.");
+                throw new Exception("O CPF é obrigatório.");
             }
+            
 
             DALCpf DALCpf = new DALCpf(conexao);
 
@@ -36,8 +37,9 @@ namespace TecweekDLL
             }
             if (modelo.CpfNome.Trim().Length == 0)
             {
-                throw new Exception("A descrição da escolaridade é obrigatória.");
+                throw new Exception("O CPF é obrigatório.");
             }
+            
 
             DALCpf DALCpf = new DALCpf(conexao);
 

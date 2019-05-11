@@ -45,3 +45,21 @@ C:\Users\Matheus\OneDrive - Fatec Centro Paula Souza\FATEC\TECWEEK\TECWEEK\Siste
 C:\Users\Matheus\OneDrive - Fatec Centro Paula Souza\FATEC\TECWEEK\TECWEEK\Sistema Tecweek\Sistema Tecweek\bin\Debug\TecweekDAL.pdb
 C:\Users\Matheus\OneDrive - Fatec Centro Paula Souza\FATEC\TECWEEK\TECWEEK\Sistema Tecweek\Sistema Tecweek\bin\Debug\TecweekDLL.pdb
 C:\Users\Matheus\OneDrive - Fatec Centro Paula Souza\FATEC\TECWEEK\TECWEEK\Sistema Tecweek\Sistema Tecweek\obj\Debug\Sistema Tecweek.csproj.CopyComplete
+C:\Users\1090481823017\Desktop\Projetos Git\Tecweek\TecweekOficial\Sistema Tecweek\Sistema Tecweek\bin\Debug\Sistema Tecweek.exe.config
+C:\Users\1090481823017\Desktop\Projetos Git\Tecweek\TecweekOficial\Sistema Tecweek\Sistema Tecweek\obj\Debug\Sistema Tecweek.exe
+C:\Users\1090481823017\Desktop\Projetos Git\Tecweek\TecweekOficial\Sistema Tecweek\Sistema Tecweek\obj\Debug\Sistema Tecweek.pdb
+C:\Users\1090481823017\Desktop\Projetos Git\Tecweek\TecweekOficial\Sistema Tecweek\Sistema Tecweek\bin\Debug\Sistema Tecweek.exe
+C:\Users\1090481823017\Desktop\Projetos Git\Tecweek\TecweekOficial\Sistema Tecweek\Sistema Tecweek\bin\Debug\Sistema Tecweek.pdb
+C:\Users\1090481823017\Desktop\Projetos Git\Tecweek\TecweekOficial\Sistema Tecweek\Sistema Tecweek\bin\Debug\Tecweek Modelo.dll
+C:\Users\1090481823017\Desktop\Projetos Git\Tecweek\TecweekOficial\Sistema Tecweek\Sistema Tecweek\bin\Debug\TecweekDAL.dll
+C:\Users\1090481823017\Desktop\Projetos Git\Tecweek\TecweekOficial\Sistema Tecweek\Sistema Tecweek\bin\Debug\TecweekDLL.dll
+C:\Users\1090481823017\Desktop\Projetos Git\Tecweek\TecweekOficial\Sistema Tecweek\Sistema Tecweek\bin\Debug\Tecweek Modelo.pdb
+C:\Users\1090481823017\Desktop\Projetos Git\Tecweek\TecweekOficial\Sistema Tecweek\Sistema Tecweek\bin\Debug\TecweekDAL.pdb
+C:\Users\1090481823017\Desktop\Projetos Git\Tecweek\TecweekOficial\Sistema Tecweek\Sistema Tecweek\bin\Debug\TecweekDLL.pdb
+C:\Users\1090481823017\Desktop\Projetos Git\Tecweek\TecweekOficial\Sistema Tecweek\Sistema Tecweek\obj\Debug\Sistema Tecweek.csprojResolveAssemblyReference.cache
+C:\Users\1090481823017\Desktop\Projetos Git\Tecweek\TecweekOficial\Sistema Tecweek\Sistema Tecweek\obj\Debug\Sistema_Tecweek.frm_cadastroParticipantes.resources
+C:\Users\1090481823017\Desktop\Projetos Git\Tecweek\TecweekOficial\Sistema Tecweek\Sistema Tecweek\obj\Debug\Sistema_Tecweek.frm_Escolaridade.resources
+C:\Users\1090481823017\Desktop\Projetos Git\Tecweek\TecweekOficial\Sistema Tecweek\Sistema Tecweek\obj\Debug\Sistema_Tecweek.frm_CPF.resources
+C:\Users\1090481823017\Desktop\Projetos Git\Tecweek\TecweekOficial\Sistema Tecweek\Sistema Tecweek\obj\Debug\Sistema_Tecweek.frm_telaPrincipal.resources
+C:\Users\1090481823017\Desktop\Projetos Git\Tecweek\TecweekOficial\Sistema Tecweek\Sistema Tecweek\obj\Debug\Sistema_Tecweek.Properties.Resources.resources
+C:\Users\1090481823017\Desktop\Projetos Git\Tecweek\TecweekOficial\Sistema Tecweek\Sistema Tecweek\obj\Debug\Sistema Tecweek.csproj.GenerateResource.Cache
