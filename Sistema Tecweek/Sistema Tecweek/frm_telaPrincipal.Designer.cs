@@ -103,6 +103,7 @@
             this.palestrasToolStripMenuItem.Name = "palestrasToolStripMenuItem";
             this.palestrasToolStripMenuItem.Size = new System.Drawing.Size(212, 22);
             this.palestrasToolStripMenuItem.Text = "Palestras";
+            this.palestrasToolStripMenuItem.Click += new System.EventHandler(this.palestrasToolStripMenuItem_Click);
             // 
             // alunosEmPalestrasToolStripMenuItem
             // 

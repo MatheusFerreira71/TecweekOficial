@@ -45,6 +45,19 @@ namespace Sistema_Tecweek
             Txt_escolaNome.Clear();
         }
 
+        public void AtualizaTabela()
+        {
+            DALConexoes cx = new DALConexoes(DadosDaConexão.StringDeConexão); //Objetos para gravar os dados;
+            SqlCommand cmd = new SqlCommand("Select * from TBEscolaridade", cx.ObjetoConexao);
+            SqlDataAdapter adapter = new SqlDataAdapter
+            {
+                SelectCommand = cmd
+            };
+            DataTable tabela = new DataTable();
+            adapter.Fill(tabela);
+            dataGridView1.DataSource = tabela;
+        }
+
         public frm_Escolaridade()
         {
             InitializeComponent();
@@ -90,13 +103,7 @@ namespace Sistema_Tecweek
             Txt_escolaNome.Enabled = false;
             Txt_escolaPesquisar.Enabled = true;
             // mostra a tabela no grid view ao iniciar o formulário.
-            DALConexoes conexao = new DALConexoes(DadosDaConexão.StringDeConexão);
-            SqlCommand cmd = new SqlCommand("Select * from TBEscolaridade", conexao.ObjetoConexao);
-            SqlDataAdapter adapter = new SqlDataAdapter();
-            adapter.SelectCommand = cmd;
-            DataTable tabela = new DataTable();
-            adapter.Fill(tabela);
-            dataGridView1.DataSource = tabela;
+            this.AtualizaTabela();
         }
 
         private void Btn_escolaSalvar_Click(object sender, EventArgs e)
@@ -116,12 +123,7 @@ namespace Sistema_Tecweek
                     MessageBox.Show("Gravado com Sucesso! Código: " + modelo.escCod.ToString(), "Informativo", 
                         MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
                     // Atualiza a tabela no gridview.
-                    SqlCommand cmd = new SqlCommand("Select * from TBEscolaridade", cx.ObjetoConexao);
-                    SqlDataAdapter adapter = new SqlDataAdapter();
-                    adapter.SelectCommand = cmd;
-                    DataTable tabela = new DataTable();
-                    adapter.Fill(tabela);
-                    dataGridView1.DataSource = tabela;
+                    this.AtualizaTabela();
                 }
                 else // Altera no banco a escolaridade
                 {
@@ -131,12 +133,7 @@ namespace Sistema_Tecweek
                     blE.Alterar(modelo);
                     MessageBox.Show("Editado com Sucesso!", "Informativo", MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
                     // Atualiza a tabela no gridview.
-                    SqlCommand cmd = new SqlCommand("Select * from TBEscolaridade", cx.ObjetoConexao);
-                    SqlDataAdapter adapter = new SqlDataAdapter();
-                    adapter.SelectCommand = cmd;
-                    DataTable tabela = new DataTable();
-                    adapter.Fill(tabela);
-                    dataGridView1.DataSource = tabela;
+                    this.AtualizaTabela();
                 }
 
                 this.limpaTela();
@@ -165,12 +162,7 @@ namespace Sistema_Tecweek
                     blE.Excluir(cod);
                     MessageBox.Show("Excluído com Sucesso!", "Informativo", MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
                     //Atualiza a tabela!
-                    SqlCommand cmd = new SqlCommand("Select * from TBEscolaridade", cx.ObjetoConexao);
-                    SqlDataAdapter adapter = new SqlDataAdapter();
-                    adapter.SelectCommand = cmd;
-                    DataTable tabela = new DataTable();
-                    adapter.Fill(tabela);
-                    dataGridView1.DataSource = tabela;
+                    this.AtualizaTabela();
                 } 
                 // Se marcar não, nada acontece e a tela é retornada.
             }
@@ -195,12 +187,7 @@ namespace Sistema_Tecweek
             if (valor == "Digite para pesquisar...")
             {
                 // Se o valor do texto for igual ao placeholder ele irá popular a tabela completa.
-                SqlCommand cmd = new SqlCommand("Select * from TBEscolaridade", cx.ObjetoConexao);
-                SqlDataAdapter adapter = new SqlDataAdapter();
-                adapter.SelectCommand = cmd;
-                DataTable tabela = new DataTable();
-                adapter.Fill(tabela);
-                dataGridView1.DataSource = tabela;
+                this.AtualizaTabela();
             }
             else
             {

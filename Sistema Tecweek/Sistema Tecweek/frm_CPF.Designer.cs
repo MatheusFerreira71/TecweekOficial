@@ -31,11 +31,11 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            this.Btn_cpfNovo = new System.Windows.Forms.Button();
-            this.Btn_cpfEditar = new System.Windows.Forms.Button();
-            this.Btn_cpfExcluir = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
+            this.Btn_cpfEditar = new System.Windows.Forms.Button();
+            this.Btn_cpfExcluir = new System.Windows.Forms.Button();
+            this.Btn_cpfNovo = new System.Windows.Forms.Button();
             this.Txt_cpfPesquisar = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.Txt_cpfNome = new System.Windows.Forms.TextBox();
@@ -52,22 +52,32 @@
             this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
-            // Btn_cpfNovo
+            // panel1
             // 
-            this.Btn_cpfNovo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.Btn_cpfNovo.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.Btn_cpfNovo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Btn_cpfNovo.Font = new System.Drawing.Font("Microsoft Tai Le", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Btn_cpfNovo.Image = global::Sistema_Tecweek.Properties.Resources.novo;
-            this.Btn_cpfNovo.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.Btn_cpfNovo.Location = new System.Drawing.Point(4, 4);
-            this.Btn_cpfNovo.Name = "Btn_cpfNovo";
-            this.Btn_cpfNovo.Size = new System.Drawing.Size(70, 60);
-            this.Btn_cpfNovo.TabIndex = 0;
-            this.Btn_cpfNovo.Text = "Novo";
-            this.Btn_cpfNovo.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.Btn_cpfNovo.UseVisualStyleBackColor = true;
-            this.Btn_cpfNovo.Click += new System.EventHandler(this.Btn_cpfNovo_Click);
+            this.panel1.Controls.Add(this.splitContainer1);
+            this.panel1.Location = new System.Drawing.Point(12, 12);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(534, 67);
+            this.panel1.TabIndex = 3;
+            // 
+            // splitContainer1
+            // 
+            this.splitContainer1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.splitContainer1.Location = new System.Drawing.Point(0, 0);
+            this.splitContainer1.Name = "splitContainer1";
+            // 
+            // splitContainer1.Panel1
+            // 
+            this.splitContainer1.Panel1.Controls.Add(this.Btn_cpfEditar);
+            this.splitContainer1.Panel1.Controls.Add(this.Btn_cpfExcluir);
+            this.splitContainer1.Panel1.Controls.Add(this.Btn_cpfNovo);
+            // 
+            // splitContainer1.Panel2
+            // 
+            this.splitContainer1.Panel2.Controls.Add(this.Txt_cpfPesquisar);
+            this.splitContainer1.Size = new System.Drawing.Size(534, 67);
+            this.splitContainer1.SplitterDistance = 230;
+            this.splitContainer1.TabIndex = 0;
             // 
             // Btn_cpfEditar
             // 
@@ -96,37 +106,27 @@
             this.Btn_cpfExcluir.Name = "Btn_cpfExcluir";
             this.Btn_cpfExcluir.Size = new System.Drawing.Size(70, 60);
             this.Btn_cpfExcluir.TabIndex = 2;
-            this.Btn_cpfExcluir.Text = "Cancelar";
+            this.Btn_cpfExcluir.Text = "Excluir";
             this.Btn_cpfExcluir.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             this.Btn_cpfExcluir.UseVisualStyleBackColor = true;
             this.Btn_cpfExcluir.Click += new System.EventHandler(this.Btn_cpfExcluir_Click);
             // 
-            // panel1
+            // Btn_cpfNovo
             // 
-            this.panel1.Controls.Add(this.splitContainer1);
-            this.panel1.Location = new System.Drawing.Point(12, 12);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(534, 67);
-            this.panel1.TabIndex = 3;
-            // 
-            // splitContainer1
-            // 
-            this.splitContainer1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.splitContainer1.Location = new System.Drawing.Point(0, 0);
-            this.splitContainer1.Name = "splitContainer1";
-            // 
-            // splitContainer1.Panel1
-            // 
-            this.splitContainer1.Panel1.Controls.Add(this.Btn_cpfEditar);
-            this.splitContainer1.Panel1.Controls.Add(this.Btn_cpfExcluir);
-            this.splitContainer1.Panel1.Controls.Add(this.Btn_cpfNovo);
-            // 
-            // splitContainer1.Panel2
-            // 
-            this.splitContainer1.Panel2.Controls.Add(this.Txt_cpfPesquisar);
-            this.splitContainer1.Size = new System.Drawing.Size(534, 67);
-            this.splitContainer1.SplitterDistance = 230;
-            this.splitContainer1.TabIndex = 0;
+            this.Btn_cpfNovo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.Btn_cpfNovo.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Btn_cpfNovo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Btn_cpfNovo.Font = new System.Drawing.Font("Microsoft Tai Le", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Btn_cpfNovo.Image = global::Sistema_Tecweek.Properties.Resources.novo;
+            this.Btn_cpfNovo.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.Btn_cpfNovo.Location = new System.Drawing.Point(4, 4);
+            this.Btn_cpfNovo.Name = "Btn_cpfNovo";
+            this.Btn_cpfNovo.Size = new System.Drawing.Size(70, 60);
+            this.Btn_cpfNovo.TabIndex = 0;
+            this.Btn_cpfNovo.Text = "Novo";
+            this.Btn_cpfNovo.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.Btn_cpfNovo.UseVisualStyleBackColor = true;
+            this.Btn_cpfNovo.Click += new System.EventHandler(this.Btn_cpfNovo_Click);
             // 
             // Txt_cpfPesquisar
             // 

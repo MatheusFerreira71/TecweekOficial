@@ -127,7 +127,20 @@ namespace Sistema_Tecweek
                 return false;
             }
         }
-        
+
+        public void AtualizaTabela()
+        {
+            DALConexoes cx = new DALConexoes(DadosDaConexão.StringDeConexão); //Objetos para gravar os dados;
+            SqlCommand cmd = new SqlCommand("Select * from TB_CPF", cx.ObjetoConexao);
+            SqlDataAdapter adapter = new SqlDataAdapter
+            {
+                SelectCommand = cmd
+            };
+            DataTable tabela = new DataTable();
+            adapter.Fill(tabela);
+            dataGridView1.DataSource = tabela;
+        }
+
         private void Txt_periodoPesquisar_Enter(object sender, EventArgs e)
         {
             if (Txt_cpfPesquisar.Text == "Digite para pesquisar...")
@@ -175,12 +188,7 @@ namespace Sistema_Tecweek
                     blC.Excluir(cod);
                     MessageBox.Show("Excluído com Sucesso!", "Informativo", MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
                     //Atualiza a tabela!
-                    SqlCommand cmd = new SqlCommand("Select * from TB_CPF", cx.ObjetoConexao);
-                    SqlDataAdapter adapter = new SqlDataAdapter();
-                    adapter.SelectCommand = cmd;
-                    DataTable tabela = new DataTable();
-                    adapter.Fill(tabela);
-                    dataGridView1.DataSource = tabela;
+                    this.AtualizaTabela();
                 }
                 // Se marcar não, nada acontece e a tela é retornada.
             }
@@ -207,12 +215,7 @@ namespace Sistema_Tecweek
                         MessageBox.Show("Gravado com Sucesso! Código: " + modelo.CpfCod.ToString(), "Informativo",
                             MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
                         // Atualiza a tabela no gridview.
-                        SqlCommand cmd = new SqlCommand("Select * from TB_CPF", cx.ObjetoConexao);
-                        SqlDataAdapter adapter = new SqlDataAdapter();
-                        adapter.SelectCommand = cmd;
-                        DataTable tabela = new DataTable();
-                        adapter.Fill(tabela);
-                        dataGridView1.DataSource = tabela;
+                        this.AtualizaTabela();
                     }
                     else // Altera no banco a escolaridade
                     {
@@ -222,12 +225,7 @@ namespace Sistema_Tecweek
                         blC.Alterar(modelo);
                         MessageBox.Show("Editado com Sucesso!", "Informativo", MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
                         // Atualiza a tabela no gridview.
-                        SqlCommand cmd = new SqlCommand("Select * from TB_CPF", cx.ObjetoConexao);
-                        SqlDataAdapter adapter = new SqlDataAdapter();
-                        adapter.SelectCommand = cmd;
-                        DataTable tabela = new DataTable();
-                        adapter.Fill(tabela);
-                        dataGridView1.DataSource = tabela;
+                        this.AtualizaTabela();
                     }
                     this.LimpaTela();
                     this.AlterarBotao(false);
@@ -260,12 +258,7 @@ namespace Sistema_Tecweek
             if (valor == "Digite para pesquisar...")
             {
                 // Se o valor do texto for igual ao placeholder ele irá popular a tabela completa.
-                SqlCommand cmd = new SqlCommand("Select * from TB_CPF", cx.ObjetoConexao);
-                SqlDataAdapter adapter = new SqlDataAdapter();
-                adapter.SelectCommand = cmd;
-                DataTable tabela = new DataTable();
-                adapter.Fill(tabela);
-                dataGridView1.DataSource = tabela;
+                this.AtualizaTabela();
             }
             else
             {
@@ -284,13 +277,7 @@ namespace Sistema_Tecweek
             Txt_cpfNome.Enabled = false;
             Txt_cpfPesquisar.Enabled = true;
             // mostra a tabela no grid view ao iniciar o formulário.
-            DALConexoes conexao = new DALConexoes(DadosDaConexão.StringDeConexão);
-            SqlCommand cmd = new SqlCommand("Select * from TB_CPF", conexao.ObjetoConexao);
-            SqlDataAdapter adapter = new SqlDataAdapter();
-            adapter.SelectCommand = cmd;
-            DataTable tabela = new DataTable();
-            adapter.Fill(tabela);
-            dataGridView1.DataSource = tabela;
+            this.AtualizaTabela();
         }
     }
 }

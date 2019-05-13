@@ -64,7 +64,7 @@ namespace TecweekDAL
             da.Fill(tabela);
             return tabela;
         }
-        public ModeloPalestra CarregaModeloEscolaridade(int Codigo)
+        public ModeloPalestra CarregaModeloPalestra(int Codigo)
         {
             ModeloPalestra modelo = new ModeloPalestra();
             SqlCommand cmd = new SqlCommand()
