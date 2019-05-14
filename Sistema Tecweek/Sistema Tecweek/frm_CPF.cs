@@ -269,13 +269,7 @@ namespace Sistema_Tecweek
 
         private void frm_CPF_Load(object sender, EventArgs e)
         {
-            Btn_cpfNovo.Enabled = true;
-            Btn_cpfEditar.Enabled = true;
-            Btn_cpfExcluir.Enabled = true;
-            Btn_cpfGravar.Enabled = false;
-            Btn_cpfCancelar.Enabled = false;
-            Txt_cpfNome.Enabled = false;
-            Txt_cpfPesquisar.Enabled = true;
+            this.AlterarBotao(false);
             // mostra a tabela no grid view ao iniciar o formulário.
             this.AtualizaTabela();
         }

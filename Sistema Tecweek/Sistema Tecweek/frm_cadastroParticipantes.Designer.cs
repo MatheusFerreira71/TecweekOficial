@@ -28,6 +28,10 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
@@ -83,17 +87,17 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Tai Le", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(413, 121);
+            this.label4.Location = new System.Drawing.Point(465, 120);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(137, 16);
+            this.label4.Size = new System.Drawing.Size(85, 16);
             this.label4.TabIndex = 3;
-            this.label4.Text = "Data de Nascimento:";
+            this.label4.Text = "Nascimento:";
             // 
             // label5
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Tai Le", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(413, 95);
+            this.label5.Location = new System.Drawing.Point(428, 95);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(51, 16);
             this.label5.TabIndex = 4;
@@ -160,6 +164,7 @@
             this.Btn_partiExcluir.Text = "Excluir";
             this.Btn_partiExcluir.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             this.Btn_partiExcluir.UseVisualStyleBackColor = true;
+            this.Btn_partiExcluir.Click += new System.EventHandler(this.Btn_partiExcluir_Click);
             // 
             // Btn_partiEditar
             // 
@@ -175,6 +180,7 @@
             this.Btn_partiEditar.Text = "Editar";
             this.Btn_partiEditar.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             this.Btn_partiEditar.UseVisualStyleBackColor = true;
+            this.Btn_partiEditar.Click += new System.EventHandler(this.Btn_partiEditar_Click);
             // 
             // Btn_partiNovo
             // 
@@ -190,16 +196,18 @@
             this.Btn_partiNovo.Text = "Novo";
             this.Btn_partiNovo.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             this.Btn_partiNovo.UseVisualStyleBackColor = true;
+            this.Btn_partiNovo.Click += new System.EventHandler(this.Btn_partiNovo_Click);
             // 
             // Txt_partiPesquisar
             // 
-            this.Txt_partiPesquisar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Txt_partiPesquisar.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.Txt_partiPesquisar.ForeColor = System.Drawing.Color.Silver;
             this.Txt_partiPesquisar.Location = new System.Drawing.Point(240, 44);
             this.Txt_partiPesquisar.Name = "Txt_partiPesquisar";
             this.Txt_partiPesquisar.Size = new System.Drawing.Size(172, 20);
             this.Txt_partiPesquisar.TabIndex = 0;
             this.Txt_partiPesquisar.Text = "Digite para pesquisar...";
+            this.Txt_partiPesquisar.TextChanged += new System.EventHandler(this.Txt_partiPesquisar_TextChanged);
             this.Txt_partiPesquisar.Enter += new System.EventHandler(this.Txt_partiPesquisar_Enter);
             this.Txt_partiPesquisar.Leave += new System.EventHandler(this.Txt_partiPesquisar_Leave);
             // 
@@ -226,6 +234,7 @@
             this.Btn_partiCancelar.Text = "Cancelar";
             this.Btn_partiCancelar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.Btn_partiCancelar.UseVisualStyleBackColor = true;
+            this.Btn_partiCancelar.Click += new System.EventHandler(this.Btn_partiCancelar_Click);
             // 
             // Btn_partiGravar
             // 
@@ -241,14 +250,50 @@
             this.Btn_partiGravar.Text = "Gravar";
             this.Btn_partiGravar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.Btn_partiGravar.UseVisualStyleBackColor = true;
+            this.Btn_partiGravar.Click += new System.EventHandler(this.Btn_partiGravar_Click);
             // 
             // dataGridView1
             // 
+            this.dataGridView1.AllowUserToResizeRows = false;
+            dataGridViewCellStyle5.BackColor = System.Drawing.Color.DarkCyan;
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("Microsoft Tai Le", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.Color.White;
+            this.dataGridView1.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle5;
+            this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dataGridView1.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle6.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("Microsoft Tai Le", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle6.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridView1.DefaultCellStyle = dataGridViewCellStyle6;
+            this.dataGridView1.EditMode = System.Windows.Forms.DataGridViewEditMode.EditProgrammatically;
+            this.dataGridView1.GridColor = System.Drawing.SystemColors.ButtonHighlight;
             this.dataGridView1.Location = new System.Drawing.Point(12, 171);
+            this.dataGridView1.MultiSelect = false;
             this.dataGridView1.Name = "dataGridView1";
+            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle7.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle7.Font = new System.Drawing.Font("Microsoft Tai Le", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle7.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle7.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle7.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle7.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridView1.RowHeadersDefaultCellStyle = dataGridViewCellStyle7;
+            dataGridViewCellStyle8.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle8.Font = new System.Drawing.Font("Microsoft Tai Le", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle8.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.Color.White;
+            this.dataGridView1.RowsDefaultCellStyle = dataGridViewCellStyle8;
             this.dataGridView1.Size = new System.Drawing.Size(651, 150);
             this.dataGridView1.TabIndex = 9;
+            this.dataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellClick);
             // 
             // Txt_partiNome
             // 
@@ -285,7 +330,7 @@
             this.Txt_partiTelefone.Location = new System.Drawing.Point(280, 91);
             this.Txt_partiTelefone.MaxLength = 11;
             this.Txt_partiTelefone.Name = "Txt_partiTelefone";
-            this.Txt_partiTelefone.Size = new System.Drawing.Size(121, 20);
+            this.Txt_partiTelefone.Size = new System.Drawing.Size(142, 20);
             this.Txt_partiTelefone.TabIndex = 15;
             // 
             // Cb_partiEscolaridade
@@ -293,7 +338,7 @@
             this.Cb_partiEscolaridade.FormattingEnabled = true;
             this.Cb_partiEscolaridade.Location = new System.Drawing.Point(280, 116);
             this.Cb_partiEscolaridade.Name = "Cb_partiEscolaridade";
-            this.Cb_partiEscolaridade.Size = new System.Drawing.Size(121, 21);
+            this.Cb_partiEscolaridade.Size = new System.Drawing.Size(184, 21);
             this.Cb_partiEscolaridade.TabIndex = 16;
             // 
             // frm_cadastroParticipantes
@@ -319,6 +364,7 @@
             this.Name = "frm_cadastroParticipantes";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Cadastro de Participantes";
+            this.Load += new System.EventHandler(this.frm_cadastroParticipantes_Load);
             this.panel1.ResumeLayout(false);
             this.splitContainer1.Panel1.ResumeLayout(false);
             this.splitContainer1.Panel2.ResumeLayout(false);

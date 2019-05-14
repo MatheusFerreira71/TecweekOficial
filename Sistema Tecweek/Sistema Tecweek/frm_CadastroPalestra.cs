@@ -88,15 +88,7 @@ namespace Sistema_Tecweek
         private void frm_CadastroPalestra_Load(object sender, EventArgs e)
         {
             Dt_PalestraDataHora.Value = DateTime.Now;
-            Btn_PalestraNovo.Enabled = true;
-            Btn_PalestraEditar.Enabled = true;
-            Btn_PalestraExcluir.Enabled = true;
-            Btn_PalestraGravar.Enabled = false;
-            Btn_PalestraCancelar.Enabled = false;
-            Txt_PalestraNome.Enabled = false;
-            Dt_PalestraDataHora.Enabled = false;
-            Txt_PalestraMaxAlunos.Enabled = false;
-            Txt_PalestraPesquisar.Enabled = true;
+            this.AlterarBotao(false);
             // mostra a tabela no grid view ao iniciar o formulário.
             this.AtualizaTabela();
         }

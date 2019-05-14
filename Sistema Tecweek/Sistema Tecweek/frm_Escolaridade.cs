@@ -95,13 +95,7 @@ namespace Sistema_Tecweek
 
         private void frm_Escolaridade_Load(object sender, EventArgs e)
         {
-            Btn_escolaNovo.Enabled = true;
-            Btn_escolaEditar.Enabled = true;
-            Btn_escolaExcluir.Enabled = true;
-            Btn_escolaSalvar.Enabled = false;
-            Btn_escolaCancelar.Enabled = false;
-            Txt_escolaNome.Enabled = false;
-            Txt_escolaPesquisar.Enabled = true;
+            this.AlterarBotao(false);
             // mostra a tabela no grid view ao iniciar o formulário.
             this.AtualizaTabela();
         }
