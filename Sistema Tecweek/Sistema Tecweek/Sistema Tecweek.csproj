@@ -64,12 +64,6 @@
     <Compile Include="frm_Escolaridade.Designer.cs">
       <DependentUpon>frm_Escolaridade.cs</DependentUpon>
     </Compile>
-    <Compile Include="frm_CPF.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="frm_CPF.Designer.cs">
-      <DependentUpon>frm_CPF.cs</DependentUpon>
-    </Compile>
     <Compile Include="frm_telaPrincipal.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -86,9 +80,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frm_Escolaridade.resx">
       <DependentUpon>frm_Escolaridade.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="frm_CPF.resx">
-      <DependentUpon>frm_CPF.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frm_telaPrincipal.resx">
       <DependentUpon>frm_telaPrincipal.cs</DependentUpon>

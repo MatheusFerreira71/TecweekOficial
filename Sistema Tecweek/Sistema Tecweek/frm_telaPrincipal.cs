@@ -29,12 +29,6 @@ namespace Sistema_Tecweek
             escolaridade.ShowDialog();
         }
 
-        private void períodosToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            frm_CPF cPF = new frm_CPF();
-            cPF.ShowDialog();
-        }
-
         private void palestrasToolStripMenuItem_Click(object sender, EventArgs e)
         {
             frm_CadastroPalestra palestra = new frm_CadastroPalestra();

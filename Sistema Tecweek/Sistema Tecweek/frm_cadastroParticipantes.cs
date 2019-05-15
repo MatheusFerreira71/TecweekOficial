@@ -69,7 +69,10 @@ namespace Sistema_Tecweek
         public void AtualizaTabela()
         {
             DALConexoes cx = new DALConexoes(DadosDaConexão.StringDeConexão); //Objetos para gravar os dados;
-            SqlCommand cmd = new SqlCommand("Select * from TBParticipante", cx.ObjetoConexao);
+            SqlCommand cmd = new SqlCommand("select P.Codigo, P.CPF, P.Nome, " +
+                "P.DataNasc As DataNascimento, P.Email, P.Telefone, E.Nome AS Escolaridade, " +
+                "P.Cod_Escolaridade From TBParticipante as P inner join TBEscolaridade as E on P.Cod_Escolaridade = E.Codigo", 
+                cx.ObjetoConexao);
             SqlDataAdapter adapter = new SqlDataAdapter
             {
                 SelectCommand = cmd
@@ -77,6 +80,82 @@ namespace Sistema_Tecweek
             DataTable tabela = new DataTable();
             adapter.Fill(tabela);
             dataGridView1.DataSource = tabela;
+        }
+
+        public bool CPF_Valido(String cpf)
+        {
+            bool[] verificador;
+            verificador = new bool[2];
+            int[] CPF_Vetor;
+            CPF_Vetor = new int[11];
+            int calculo = 0, aux = 10;
+            for (int i = 0; i < 11; i++)
+            {
+                CPF_Vetor[i] = Convert.ToInt32(cpf[i].ToString());
+            }
+            for (int i = 0; i <= 8; i++)
+            {
+                calculo += CPF_Vetor[i] * aux;
+                aux -= 1;
+            }
+            calculo *= 10;
+            calculo %= 11;
+            if (calculo == 10)
+            {
+                calculo = 0;
+            }
+            if (calculo == CPF_Vetor[9])
+            {
+                verificador[0] = true;
+            }
+            else
+            {
+                verificador[0] = false;
+            }
+            calculo = 0;
+            aux = 11;
+            for (int i = 0; i <= 9; i++)
+            {
+                calculo += CPF_Vetor[i] * aux;
+                aux -= 1;
+            }
+            calculo *= 10;
+            calculo %= 11;
+            if (calculo == 10)
+            {
+                calculo = 0;
+            }
+            if (calculo == CPF_Vetor[10])
+            {
+                verificador[1] = true;
+            }
+            else
+            {
+                verificador[0] = false;
+            }
+            if (
+                CPF_Vetor[0] == CPF_Vetor[1]
+                && CPF_Vetor[1] == CPF_Vetor[2]
+                && CPF_Vetor[2] == CPF_Vetor[3]
+                && CPF_Vetor[3] == CPF_Vetor[4]
+                && CPF_Vetor[4] == CPF_Vetor[5]
+                && CPF_Vetor[5] == CPF_Vetor[6]
+                && CPF_Vetor[6] == CPF_Vetor[7]
+                && CPF_Vetor[7] == CPF_Vetor[8]
+                && CPF_Vetor[8] == CPF_Vetor[9]
+                && CPF_Vetor[9] == CPF_Vetor[10]
+                )
+            {
+                return false;
+            }
+            else if (verificador[0] && verificador[1])
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
         }
 
         private void Txt_partiPesquisar_Enter(object sender, EventArgs e)
@@ -159,7 +238,14 @@ namespace Sistema_Tecweek
                     }
                     Txt_partiEmail.Text = dataGridView1.Rows[linha].Cells[4].Value.ToString();
                     Txt_partiTelefone.Text = dataGridView1.Rows[linha].Cells[5].Value.ToString();
-                    Cb_partiEscolaridade.SelectedValue = dataGridView1.Rows[linha].Cells[6].Value.ToString();
+                    if (dataGridView1.Rows[linha].Cells[7].Value.ToString() == "")
+                    {
+                        Cb_partiEscolaridade.SelectedValue = 1;
+                    }
+                    else
+                    {
+                        Cb_partiEscolaridade.SelectedValue = dataGridView1.Rows[linha].Cells[7].Value.ToString();
+                    }
                 }
                 catch (Exception ex)
                 {
@@ -205,37 +291,45 @@ namespace Sistema_Tecweek
         {
             try
             {
-                ModeloParticipante modelo = new ModeloParticipante
+                if (this.CPF_Valido(Txt_partiCPF.Text)) //Verifica se o CPF é válido.
                 {
-                    ParticipanteNome = Txt_partiNome.Text,
-                    ParticipanteDataNasc = dtp_partiNascimento.Value,
-                    ParticipanteCodEscolaridade = Convert.ToInt32(Cb_partiEscolaridade.SelectedValue),
-                    ParticipanteEmail = Txt_partiEmail.Text,
-                    ParticipanteTelefone = Txt_partiTelefone.Text
-                };
-                DALConexoes cx = new DALConexoes(DadosDaConexão.StringDeConexão); //Objetos para gravar os dados;
-                BLLParticipante BLLParti = new BLLParticipante(cx);
+                    ModeloParticipante modelo = new ModeloParticipante
+                    {
+                        ParticipanteNome = Txt_partiNome.Text,
+                        ParticipanteCPF = Txt_partiCPF.Text,
+                        ParticipanteDataNasc = dtp_partiNascimento.Value,
+                        ParticipanteCodEscolaridade = Convert.ToInt32(Cb_partiEscolaridade.SelectedValue),
+                        ParticipanteEmail = Txt_partiEmail.Text,
+                        ParticipanteTelefone = Txt_partiTelefone.Text
+                    };
+                    DALConexoes cx = new DALConexoes(DadosDaConexão.StringDeConexão); //Objetos para gravar os dados;
+                    BLLParticipante BLLParti = new BLLParticipante(cx);
 
-                if (this.operacao == "inserir") // Cadastra no banco a escolaridade.
-                {
-                    BLLParti.Incluir(modelo);
-                    MessageBox.Show("Gravado com Sucesso! Código: " + modelo.ParticipanteCod.ToString(), "Informativo",
-                        MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
-                    // Atualiza a tabela no gridview.
-                    this.AtualizaTabela();
+                    if (this.operacao == "inserir") // Cadastra no banco a escolaridade.
+                    {
+                        BLLParti.Incluir(modelo);
+                        MessageBox.Show("Gravado com Sucesso! Código: " + modelo.ParticipanteCod.ToString(), "Informativo",
+                            MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
+                        // Atualiza a tabela no gridview.
+                        this.AtualizaTabela();
+                    }
+                    else // Altera no banco a escolaridade
+                    {
+                        int linha = dataGridView1.CurrentRow.Index;
+                        int cod = Convert.ToInt32(dataGridView1.Rows[linha].Cells[0].Value.ToString());
+                        modelo.ParticipanteCod = cod;
+                        BLLParti.Alterar(modelo);
+                        MessageBox.Show("Editado com Sucesso!", "Informativo", MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
+                        // Atualiza a tabela no gridview.
+                        this.AtualizaTabela();
+                    }
+                    this.LimpaTela();
+                    this.AlterarBotao(false);
                 }
-                else // Altera no banco a escolaridade
+                else // Se o CPF não for válido!
                 {
-                    int linha = dataGridView1.CurrentRow.Index;
-                    int cod = Convert.ToInt32(dataGridView1.Rows[linha].Cells[0].Value.ToString());
-                    modelo.ParticipanteCod = cod;
-                    BLLParti.Alterar(modelo);
-                    MessageBox.Show("Editado com Sucesso!", "Informativo", MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
-                    // Atualiza a tabela no gridview.
-                    this.AtualizaTabela();
+                    MessageBox.Show("CPF INVÁLIDO!", "ERRO!", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
-                this.LimpaTela();
-                this.AlterarBotao(false);
             }
             catch (Exception ex)
             {

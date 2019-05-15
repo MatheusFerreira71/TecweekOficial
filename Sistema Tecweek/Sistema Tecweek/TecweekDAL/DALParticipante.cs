@@ -21,10 +21,10 @@ namespace TecweekDAL
             SqlCommand cmd = new SqlCommand
             {
                 Connection = conexao.ObjetoConexao,
-                CommandText = "insert into TBParticipante(Cod_CPF, Nome, DataNasc, Email, Telefone, Cod_Escolaridade) " +
-                "values (@CodCPF, @Nome, @DataNasc, @Email, @Telefone, @CodEscolaridade); select @@IDENTITY;"
+                CommandText = "insert into TBParticipante(CPF, Nome, DataNasc, Email, Telefone, Cod_Escolaridade) " +
+                "values (@CPF, @Nome, @DataNasc, @Email, @Telefone, @CodEscolaridade); select @@IDENTITY;"
             };
-            cmd.Parameters.AddWithValue("@CodCPF", modelo.ParticipanteCodCPF);
+            cmd.Parameters.AddWithValue("@CPF", modelo.ParticipanteCPF);
             cmd.Parameters.AddWithValue("@Nome", modelo.ParticipanteNome);
             cmd.Parameters.AddWithValue("@DataNasc", modelo.ParticipanteDataNasc);
             cmd.Parameters.AddWithValue("@Email", modelo.ParticipanteEmail);
@@ -39,11 +39,11 @@ namespace TecweekDAL
             SqlCommand cmd = new SqlCommand
             {
                 Connection = conexao.ObjetoConexao,
-                CommandText = "update TBEscolaridade set Cod_CPF = @CodCPF, Nome = @Nome, DataNasc = @DataNasc, " +
+                CommandText = "update TBParticipante set CPF = @CPF, Nome = @Nome, DataNasc = @DataNasc, " +
                 "Email = @Email, Telefone = @Telefone, Cod_Escolaridade = @CodEscolaridade where Codigo = @Codigo;"
 
             };
-            cmd.Parameters.AddWithValue("@CodCPF", modelo.ParticipanteCodCPF);
+            cmd.Parameters.AddWithValue("@CPF", modelo.ParticipanteCPF);
             cmd.Parameters.AddWithValue("@Nome", modelo.ParticipanteNome);
             cmd.Parameters.AddWithValue("@DataNasc", modelo.ParticipanteDataNasc);
             cmd.Parameters.AddWithValue("@Email", modelo.ParticipanteEmail);
@@ -69,9 +69,11 @@ namespace TecweekDAL
         public DataTable Localizar(String valor)
         {
             DataTable tabela = new DataTable();
-            SqlDataAdapter da = new SqlDataAdapter("Select * from TBParticipante where " +
-                "DataNasc like '%" + valor + "%' OR Nome like '%" + valor + "%' OR Email like '%" + valor + 
-                "%' OR Telefone like '%" + valor + "%'", 
+            SqlDataAdapter da = new SqlDataAdapter("select P.Codigo, P.CPF, P.Nome, " +
+                "P.DataNasc As DataNascimento, P.Email, P.Telefone, E.Nome AS Escolaridade, " +
+                "P.Cod_Escolaridade From TBParticipante as P inner join TBEscolaridade as E on P.Cod_Escolaridade = E.Codigo where " +
+                "P.DataNasc like '%" + valor + "%' OR P.Nome like '%" + valor + "%' OR P.Email like '%" + valor + 
+                "%' OR P.Telefone like '%" + valor + "%' OR E.Nome like '%" + valor + "%' OR P.CPF like '%" + valor + "%'", 
                 conexao.StringConexao);
             da.Fill(tabela);
             return tabela;
@@ -90,7 +92,7 @@ namespace TecweekDAL
             {
                 registro.Read();
                 modelo.ParticipanteCod = Convert.ToInt32(registro["Codigo"]);
-                modelo.ParticipanteCodCPF = Convert.ToInt32(registro["Cod_CPF"]);
+                modelo.ParticipanteCPF = Convert.ToString(registro["CPF"]);
                 modelo.ParticipanteNome = Convert.ToString(registro["Nome"]);
                 modelo.ParticipanteDataNasc = Convert.ToDateTime(registro["DataNasc"]);
                 modelo.ParticipanteEmail = Convert.ToString(registro["Email"]);

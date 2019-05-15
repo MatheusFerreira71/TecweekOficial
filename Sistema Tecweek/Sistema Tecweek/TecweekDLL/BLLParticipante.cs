@@ -30,11 +30,11 @@ namespace TecweekDLL
             {
                 throw new Exception("O Telefone do Participante é obrigatório.");
             }
-            if (modelo.ParticipanteCodCPF < 0)
+            if (modelo.ParticipanteCPF.Trim().Length == 0)
             {
                 throw new Exception("O CPF do Participante é obrigatório.");
             }
-            if (modelo.ParticipanteCodCPF < 0)
+            if (modelo.ParticipanteCodEscolaridade < 0)
             {
                 throw new Exception("A Escolaridade do Participante é obrigatória.");
             }
@@ -55,11 +55,11 @@ namespace TecweekDLL
             {
                 throw new Exception("O Telefone do Participante é obrigatório.");
             }
-            if (modelo.ParticipanteCodCPF < 0)
+            if (modelo.ParticipanteCPF.Trim().Length < 0)
             {
                 throw new Exception("O CPF do Participante é obrigatório.");
             }
-            if (modelo.ParticipanteCodCPF < 0)
+            if (modelo.ParticipanteCodEscolaridade < 0)
             {
                 throw new Exception("A Escolaridade do Participante é obrigatória.");
             }

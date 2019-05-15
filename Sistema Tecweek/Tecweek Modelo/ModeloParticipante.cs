@@ -14,11 +14,11 @@ namespace Tecweek_Modelo
             get { return this.Participante_Cod; }
             set { this.Participante_Cod = value; }
         }
-        private int Participante_Cod_CPF;
-        public int ParticipanteCodCPF
+        private String Participante_CPF;
+        public String ParticipanteCPF
         {
-            get { return this.Participante_Cod_CPF; }
-            set { this.Participante_Cod_CPF = value; }
+            get { return this.Participante_CPF; }
+            set { this.Participante_CPF = value; }
         }
         private String Participante_Nome;
         public String ParticipanteNome 

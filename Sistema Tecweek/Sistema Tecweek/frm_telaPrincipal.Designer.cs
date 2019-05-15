@@ -32,7 +32,6 @@
             this.cadastrosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.alunosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.periodoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.palestrasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.alunosEmPalestrasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.usuárioToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -64,7 +63,6 @@
             this.cadastrosToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.alunosToolStripMenuItem,
             this.toolStripMenuItem1,
-            this.periodoToolStripMenuItem,
             this.palestrasToolStripMenuItem,
             this.alunosEmPalestrasToolStripMenuItem,
             this.usuárioToolStripMenuItem});
@@ -88,14 +86,6 @@
             this.toolStripMenuItem1.Size = new System.Drawing.Size(212, 22);
             this.toolStripMenuItem1.Text = "Escolaridade";
             this.toolStripMenuItem1.Click += new System.EventHandler(this.toolStripMenuItem1_Click);
-            // 
-            // periodoToolStripMenuItem
-            // 
-            this.periodoToolStripMenuItem.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.periodoToolStripMenuItem.Name = "periodoToolStripMenuItem";
-            this.periodoToolStripMenuItem.Size = new System.Drawing.Size(212, 22);
-            this.periodoToolStripMenuItem.Text = "CPF";
-            this.periodoToolStripMenuItem.Click += new System.EventHandler(this.períodosToolStripMenuItem_Click);
             // 
             // palestrasToolStripMenuItem
             // 
@@ -195,7 +185,6 @@
         private System.Windows.Forms.ToolStripMenuItem alunosToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem presençasToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem1;
-        private System.Windows.Forms.ToolStripMenuItem periodoToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem porDiaToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem porPalestraToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem palestrasToolStripMenuItem;

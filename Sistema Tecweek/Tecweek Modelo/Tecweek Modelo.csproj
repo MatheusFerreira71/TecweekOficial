@@ -41,7 +41,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ModeloCPF.cs" />
     <Compile Include="modeloEscolaridade.cs" />
     <Compile Include="ModeloPalestra.cs" />
     <Compile Include="ModeloParticipante.cs" />

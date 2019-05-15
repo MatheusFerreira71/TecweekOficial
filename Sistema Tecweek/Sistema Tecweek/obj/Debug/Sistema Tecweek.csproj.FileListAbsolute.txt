@@ -31,7 +31,6 @@ C:\Users\Matheus\OneDrive - Fatec Centro Paula Souza\FATEC\TECWEEK\TECWEEK\Siste
 C:\Users\Matheus\OneDrive - Fatec Centro Paula Souza\FATEC\TECWEEK\TECWEEK\Sistema Tecweek\Sistema Tecweek\obj\Debug\Sistema Tecweek.csprojAssemblyReference.cache
 C:\Users\Matheus\OneDrive - Fatec Centro Paula Souza\FATEC\TECWEEK\TECWEEK\Sistema Tecweek\Sistema Tecweek\obj\Debug\Sistema_Tecweek.frm_cadastroParticipantes.resources
 C:\Users\Matheus\OneDrive - Fatec Centro Paula Souza\FATEC\TECWEEK\TECWEEK\Sistema Tecweek\Sistema Tecweek\obj\Debug\Sistema_Tecweek.frm_Escolaridade.resources
-C:\Users\Matheus\OneDrive - Fatec Centro Paula Souza\FATEC\TECWEEK\TECWEEK\Sistema Tecweek\Sistema Tecweek\obj\Debug\Sistema_Tecweek.frm_CPF.resources
 C:\Users\Matheus\OneDrive - Fatec Centro Paula Souza\FATEC\TECWEEK\TECWEEK\Sistema Tecweek\Sistema Tecweek\obj\Debug\Sistema_Tecweek.frm_telaPrincipal.resources
 C:\Users\Matheus\OneDrive - Fatec Centro Paula Souza\FATEC\TECWEEK\TECWEEK\Sistema Tecweek\Sistema Tecweek\obj\Debug\Sistema_Tecweek.Properties.Resources.resources
 C:\Users\Matheus\OneDrive - Fatec Centro Paula Souza\FATEC\TECWEEK\TECWEEK\Sistema Tecweek\Sistema Tecweek\obj\Debug\Sistema Tecweek.csproj.GenerateResource.cache
