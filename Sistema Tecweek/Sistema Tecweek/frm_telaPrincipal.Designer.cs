@@ -101,6 +101,7 @@
             this.alunosEmPalestrasToolStripMenuItem.Name = "alunosEmPalestrasToolStripMenuItem";
             this.alunosEmPalestrasToolStripMenuItem.Size = new System.Drawing.Size(212, 22);
             this.alunosEmPalestrasToolStripMenuItem.Text = "Participantes das Palestras";
+            this.alunosEmPalestrasToolStripMenuItem.Click += new System.EventHandler(this.alunosEmPalestrasToolStripMenuItem_Click);
             // 
             // usuárioToolStripMenuItem
             // 

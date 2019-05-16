@@ -34,5 +34,11 @@ namespace Sistema_Tecweek
             frm_CadastroPalestra palestra = new frm_CadastroPalestra();
             palestra.ShowDialog();
         }
+
+        private void alunosEmPalestrasToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Frm_CadastrarAlunoNaPalestra CPalestra = new Frm_CadastrarAlunoNaPalestra();
+            CPalestra.ShowDialog();
+        }
     }
 }

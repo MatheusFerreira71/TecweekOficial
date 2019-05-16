@@ -84,7 +84,7 @@ namespace TecweekDAL
             SqlCommand cmd = new SqlCommand()
             {
                 Connection = conexao.ObjetoConexao,
-                CommandText = "Select * form TBParticipante where Codigo =" + Codigo.ToString()
+                CommandText = "Select * from TBParticipante where Codigo =" + Codigo.ToString()
             };
             conexao.Conectar();
             SqlDataReader registro = cmd.ExecuteReader();

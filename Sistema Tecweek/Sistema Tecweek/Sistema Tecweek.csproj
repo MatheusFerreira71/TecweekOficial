@@ -46,6 +46,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Frm_CadastrarAlunoNaPalestra.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_CadastrarAlunoNaPalestra.Designer.cs">
+      <DependentUpon>Frm_CadastrarAlunoNaPalestra.cs</DependentUpon>
+    </Compile>
     <Compile Include="frm_CadastroPalestra.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -72,6 +78,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Frm_CadastrarAlunoNaPalestra.resx">
+      <DependentUpon>Frm_CadastrarAlunoNaPalestra.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frm_CadastroPalestra.resx">
       <DependentUpon>frm_CadastroPalestra.cs</DependentUpon>
     </EmbeddedResource>

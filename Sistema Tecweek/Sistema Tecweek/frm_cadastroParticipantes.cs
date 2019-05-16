@@ -181,7 +181,7 @@ namespace Sistema_Tecweek
             DALConexoes cx = new DALConexoes(DadosDaConexão.StringDeConexão);
             BLLEscolaridade BLLEscol = new BLLEscolaridade(cx);
             dtp_partiNascimento.Value = DateTime.Today;
-            Cb_partiEscolaridade.DataSource = BLLEscol.Localizar("");
+            Cb_partiEscolaridade.DataSource = BLLEscol.Localizar("%");
             Cb_partiEscolaridade.DisplayMember = "Nome";
             Cb_partiEscolaridade.ValueMember = "Codigo";
             this.AlterarBotao(false);
