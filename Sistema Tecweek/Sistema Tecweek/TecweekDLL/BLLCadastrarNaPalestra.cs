@@ -61,5 +61,10 @@ namespace TecweekDLL
             DALCadastroNaPalestra DALCPales = new DALCadastroNaPalestra(conexao);
             return DALCPales.CarregaModeloCPalestra(Codigo);
         }
+        public bool HaVagas(int Palestra)
+        {
+            BLLCadastrarNaPalestra BLLCPales = new BLLCadastrarNaPalestra(conexao);
+            return BLLCPales.HaVagas(Palestra);
+        }
     }
 }

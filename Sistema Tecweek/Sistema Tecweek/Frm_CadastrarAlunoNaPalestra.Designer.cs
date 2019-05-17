@@ -28,8 +28,20 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle13 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle14 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle15 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle16 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle17 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle18 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.Btn_CPalestraGravar = new System.Windows.Forms.Button();
+            this.Btn_CPalestraCancelar = new System.Windows.Forms.Button();
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
+            this.Btn_CPalestraExcluir = new System.Windows.Forms.Button();
+            this.Btn_CPalestraNovo = new System.Windows.Forms.Button();
+            this.Btn_CPalestraEditar = new System.Windows.Forms.Button();
+            this.Txt_CPalestraPesquisarPrincipal = new System.Windows.Forms.TextBox();
             this.panel1 = new System.Windows.Forms.Panel();
             this.GV_CPalestraPrincipal = new System.Windows.Forms.DataGridView();
             this.GV_CPalestraAlunos = new System.Windows.Forms.DataGridView();
@@ -42,12 +54,6 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.Txt_CPalestraPesquisarAlunos = new System.Windows.Forms.TextBox();
-            this.Btn_CPalestraNovo = new System.Windows.Forms.Button();
-            this.Btn_CPalestraEditar = new System.Windows.Forms.Button();
-            this.Btn_CPalestraExcluir = new System.Windows.Forms.Button();
-            this.Btn_CPalestraCancelar = new System.Windows.Forms.Button();
-            this.Btn_CPalestraGravar = new System.Windows.Forms.Button();
-            this.Txt_CPalestraPesquisarPrincipal = new System.Windows.Forms.TextBox();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
@@ -66,6 +72,37 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(734, 50);
             this.panel2.TabIndex = 1;
+            // 
+            // Btn_CPalestraGravar
+            // 
+            this.Btn_CPalestraGravar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Btn_CPalestraGravar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Btn_CPalestraGravar.Font = new System.Drawing.Font("Microsoft Tai Le", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Btn_CPalestraGravar.Image = global::Sistema_Tecweek.Properties.Resources.Gravar;
+            this.Btn_CPalestraGravar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.Btn_CPalestraGravar.Location = new System.Drawing.Point(502, 9);
+            this.Btn_CPalestraGravar.Name = "Btn_CPalestraGravar";
+            this.Btn_CPalestraGravar.Size = new System.Drawing.Size(105, 38);
+            this.Btn_CPalestraGravar.TabIndex = 14;
+            this.Btn_CPalestraGravar.Text = "Gravar";
+            this.Btn_CPalestraGravar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.Btn_CPalestraGravar.UseVisualStyleBackColor = true;
+            // 
+            // Btn_CPalestraCancelar
+            // 
+            this.Btn_CPalestraCancelar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Btn_CPalestraCancelar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Btn_CPalestraCancelar.Font = new System.Drawing.Font("Microsoft Tai Le", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Btn_CPalestraCancelar.Image = global::Sistema_Tecweek.Properties.Resources.Cancelar;
+            this.Btn_CPalestraCancelar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.Btn_CPalestraCancelar.Location = new System.Drawing.Point(613, 9);
+            this.Btn_CPalestraCancelar.Name = "Btn_CPalestraCancelar";
+            this.Btn_CPalestraCancelar.Size = new System.Drawing.Size(118, 38);
+            this.Btn_CPalestraCancelar.TabIndex = 13;
+            this.Btn_CPalestraCancelar.Text = "Cancelar";
+            this.Btn_CPalestraCancelar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.Btn_CPalestraCancelar.UseVisualStyleBackColor = true;
+            this.Btn_CPalestraCancelar.Click += new System.EventHandler(this.Btn_CPalestraCancelar_Click);
             // 
             // splitContainer1
             // 
@@ -86,6 +123,65 @@
             this.splitContainer1.SplitterDistance = 244;
             this.splitContainer1.TabIndex = 0;
             // 
+            // Btn_CPalestraExcluir
+            // 
+            this.Btn_CPalestraExcluir.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Btn_CPalestraExcluir.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Btn_CPalestraExcluir.Font = new System.Drawing.Font("Microsoft Tai Le", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Btn_CPalestraExcluir.Image = global::Sistema_Tecweek.Properties.Resources.Excluir;
+            this.Btn_CPalestraExcluir.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.Btn_CPalestraExcluir.Location = new System.Drawing.Point(168, 3);
+            this.Btn_CPalestraExcluir.Name = "Btn_CPalestraExcluir";
+            this.Btn_CPalestraExcluir.Size = new System.Drawing.Size(70, 60);
+            this.Btn_CPalestraExcluir.TabIndex = 15;
+            this.Btn_CPalestraExcluir.Text = "Excluir";
+            this.Btn_CPalestraExcluir.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.Btn_CPalestraExcluir.UseVisualStyleBackColor = true;
+            // 
+            // Btn_CPalestraNovo
+            // 
+            this.Btn_CPalestraNovo.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Btn_CPalestraNovo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Btn_CPalestraNovo.Font = new System.Drawing.Font("Microsoft Tai Le", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Btn_CPalestraNovo.Image = global::Sistema_Tecweek.Properties.Resources.novo;
+            this.Btn_CPalestraNovo.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.Btn_CPalestraNovo.Location = new System.Drawing.Point(6, 3);
+            this.Btn_CPalestraNovo.Name = "Btn_CPalestraNovo";
+            this.Btn_CPalestraNovo.Size = new System.Drawing.Size(70, 60);
+            this.Btn_CPalestraNovo.TabIndex = 13;
+            this.Btn_CPalestraNovo.Text = "Novo";
+            this.Btn_CPalestraNovo.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.Btn_CPalestraNovo.UseVisualStyleBackColor = true;
+            this.Btn_CPalestraNovo.Click += new System.EventHandler(this.Btn_CPalestraNovo_Click);
+            // 
+            // Btn_CPalestraEditar
+            // 
+            this.Btn_CPalestraEditar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Btn_CPalestraEditar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Btn_CPalestraEditar.Font = new System.Drawing.Font("Microsoft Tai Le", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Btn_CPalestraEditar.Image = global::Sistema_Tecweek.Properties.Resources.Editar;
+            this.Btn_CPalestraEditar.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.Btn_CPalestraEditar.Location = new System.Drawing.Point(87, 3);
+            this.Btn_CPalestraEditar.Name = "Btn_CPalestraEditar";
+            this.Btn_CPalestraEditar.Size = new System.Drawing.Size(70, 60);
+            this.Btn_CPalestraEditar.TabIndex = 14;
+            this.Btn_CPalestraEditar.Text = "Editar";
+            this.Btn_CPalestraEditar.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.Btn_CPalestraEditar.UseVisualStyleBackColor = true;
+            this.Btn_CPalestraEditar.Click += new System.EventHandler(this.Btn_CPalestraEditar_Click);
+            // 
+            // Txt_CPalestraPesquisarPrincipal
+            // 
+            this.Txt_CPalestraPesquisarPrincipal.ForeColor = System.Drawing.Color.Silver;
+            this.Txt_CPalestraPesquisarPrincipal.Location = new System.Drawing.Point(297, 40);
+            this.Txt_CPalestraPesquisarPrincipal.Name = "Txt_CPalestraPesquisarPrincipal";
+            this.Txt_CPalestraPesquisarPrincipal.Size = new System.Drawing.Size(186, 20);
+            this.Txt_CPalestraPesquisarPrincipal.TabIndex = 0;
+            this.Txt_CPalestraPesquisarPrincipal.Text = "Digite para pesquisar...";
+            this.Txt_CPalestraPesquisarPrincipal.TextChanged += new System.EventHandler(this.Txt_CPalestraPesquisarPrincipal_TextChanged);
+            this.Txt_CPalestraPesquisarPrincipal.Enter += new System.EventHandler(this.Txt_CPalestraPesquisarPrincipal_Enter);
+            this.Txt_CPalestraPesquisarPrincipal.Leave += new System.EventHandler(this.Txt_CPalestraPesquisarPrincipal_Leave);
+            // 
             // panel1
             // 
             this.panel1.Controls.Add(this.splitContainer1);
@@ -96,16 +192,70 @@
             // 
             // GV_CPalestraPrincipal
             // 
+            this.GV_CPalestraPrincipal.AllowUserToResizeRows = false;
+            dataGridViewCellStyle13.BackColor = System.Drawing.Color.DarkCyan;
+            dataGridViewCellStyle13.Font = new System.Drawing.Font("Microsoft Tai Le", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle13.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle13.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle13.SelectionForeColor = System.Drawing.Color.White;
+            this.GV_CPalestraPrincipal.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle13;
+            this.GV_CPalestraPrincipal.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
+            this.GV_CPalestraPrincipal.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
+            dataGridViewCellStyle14.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle14.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle14.Font = new System.Drawing.Font("Microsoft Tai Le", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle14.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle14.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle14.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle14.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.GV_CPalestraPrincipal.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle14;
             this.GV_CPalestraPrincipal.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridViewCellStyle15.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle15.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle15.Font = new System.Drawing.Font("Microsoft Tai Le", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle15.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle15.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle15.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle15.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.GV_CPalestraPrincipal.DefaultCellStyle = dataGridViewCellStyle15;
+            this.GV_CPalestraPrincipal.EditMode = System.Windows.Forms.DataGridViewEditMode.EditProgrammatically;
             this.GV_CPalestraPrincipal.Location = new System.Drawing.Point(12, 338);
+            this.GV_CPalestraPrincipal.MultiSelect = false;
             this.GV_CPalestraPrincipal.Name = "GV_CPalestraPrincipal";
             this.GV_CPalestraPrincipal.Size = new System.Drawing.Size(734, 176);
             this.GV_CPalestraPrincipal.TabIndex = 2;
             // 
             // GV_CPalestraAlunos
             // 
+            this.GV_CPalestraAlunos.AllowUserToResizeRows = false;
+            dataGridViewCellStyle16.BackColor = System.Drawing.Color.DarkCyan;
+            dataGridViewCellStyle16.Font = new System.Drawing.Font("Microsoft Tai Le", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle16.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle16.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle16.SelectionForeColor = System.Drawing.Color.White;
+            this.GV_CPalestraAlunos.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle16;
+            this.GV_CPalestraAlunos.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
+            this.GV_CPalestraAlunos.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
+            dataGridViewCellStyle17.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle17.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle17.Font = new System.Drawing.Font("Microsoft Tai Le", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle17.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle17.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle17.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle17.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.GV_CPalestraAlunos.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle17;
             this.GV_CPalestraAlunos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridViewCellStyle18.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle18.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle18.Font = new System.Drawing.Font("Microsoft Tai Le", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle18.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle18.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle18.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle18.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.GV_CPalestraAlunos.DefaultCellStyle = dataGridViewCellStyle18;
+            this.GV_CPalestraAlunos.EditMode = System.Windows.Forms.DataGridViewEditMode.EditProgrammatically;
             this.GV_CPalestraAlunos.Location = new System.Drawing.Point(12, 128);
+            this.GV_CPalestraAlunos.MultiSelect = false;
             this.GV_CPalestraAlunos.Name = "GV_CPalestraAlunos";
             this.GV_CPalestraAlunos.Size = new System.Drawing.Size(360, 190);
             this.GV_CPalestraAlunos.TabIndex = 3;
@@ -190,97 +340,9 @@
             this.Txt_CPalestraPesquisarAlunos.Size = new System.Drawing.Size(189, 20);
             this.Txt_CPalestraPesquisarAlunos.TabIndex = 12;
             this.Txt_CPalestraPesquisarAlunos.Text = "Pesquisar aluno...";
+            this.Txt_CPalestraPesquisarAlunos.TextChanged += new System.EventHandler(this.Txt_CPalestraPesquisarAlunos_TextChanged);
             this.Txt_CPalestraPesquisarAlunos.Enter += new System.EventHandler(this.Txt_CPalestraPesquisarAlunos_Enter);
             this.Txt_CPalestraPesquisarAlunos.Leave += new System.EventHandler(this.Txt_CPalestraPesquisarAlunos_Leave);
-            // 
-            // Btn_CPalestraNovo
-            // 
-            this.Btn_CPalestraNovo.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.Btn_CPalestraNovo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Btn_CPalestraNovo.Font = new System.Drawing.Font("Microsoft Tai Le", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Btn_CPalestraNovo.Image = global::Sistema_Tecweek.Properties.Resources.novo;
-            this.Btn_CPalestraNovo.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.Btn_CPalestraNovo.Location = new System.Drawing.Point(6, 3);
-            this.Btn_CPalestraNovo.Name = "Btn_CPalestraNovo";
-            this.Btn_CPalestraNovo.Size = new System.Drawing.Size(70, 60);
-            this.Btn_CPalestraNovo.TabIndex = 13;
-            this.Btn_CPalestraNovo.Text = "Novo";
-            this.Btn_CPalestraNovo.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.Btn_CPalestraNovo.UseVisualStyleBackColor = true;
-            this.Btn_CPalestraNovo.Click += new System.EventHandler(this.Btn_CPalestraNovo_Click);
-            // 
-            // Btn_CPalestraEditar
-            // 
-            this.Btn_CPalestraEditar.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.Btn_CPalestraEditar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Btn_CPalestraEditar.Font = new System.Drawing.Font("Microsoft Tai Le", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Btn_CPalestraEditar.Image = global::Sistema_Tecweek.Properties.Resources.Editar;
-            this.Btn_CPalestraEditar.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.Btn_CPalestraEditar.Location = new System.Drawing.Point(87, 3);
-            this.Btn_CPalestraEditar.Name = "Btn_CPalestraEditar";
-            this.Btn_CPalestraEditar.Size = new System.Drawing.Size(70, 60);
-            this.Btn_CPalestraEditar.TabIndex = 14;
-            this.Btn_CPalestraEditar.Text = "Editar";
-            this.Btn_CPalestraEditar.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.Btn_CPalestraEditar.UseVisualStyleBackColor = true;
-            this.Btn_CPalestraEditar.Click += new System.EventHandler(this.Btn_CPalestraEditar_Click);
-            // 
-            // Btn_CPalestraExcluir
-            // 
-            this.Btn_CPalestraExcluir.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.Btn_CPalestraExcluir.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Btn_CPalestraExcluir.Font = new System.Drawing.Font("Microsoft Tai Le", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Btn_CPalestraExcluir.Image = global::Sistema_Tecweek.Properties.Resources.Excluir;
-            this.Btn_CPalestraExcluir.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.Btn_CPalestraExcluir.Location = new System.Drawing.Point(168, 3);
-            this.Btn_CPalestraExcluir.Name = "Btn_CPalestraExcluir";
-            this.Btn_CPalestraExcluir.Size = new System.Drawing.Size(70, 60);
-            this.Btn_CPalestraExcluir.TabIndex = 15;
-            this.Btn_CPalestraExcluir.Text = "Excluir";
-            this.Btn_CPalestraExcluir.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.Btn_CPalestraExcluir.UseVisualStyleBackColor = true;
-            // 
-            // Btn_CPalestraCancelar
-            // 
-            this.Btn_CPalestraCancelar.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.Btn_CPalestraCancelar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Btn_CPalestraCancelar.Font = new System.Drawing.Font("Microsoft Tai Le", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Btn_CPalestraCancelar.Image = global::Sistema_Tecweek.Properties.Resources.Cancelar;
-            this.Btn_CPalestraCancelar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.Btn_CPalestraCancelar.Location = new System.Drawing.Point(613, 9);
-            this.Btn_CPalestraCancelar.Name = "Btn_CPalestraCancelar";
-            this.Btn_CPalestraCancelar.Size = new System.Drawing.Size(118, 38);
-            this.Btn_CPalestraCancelar.TabIndex = 13;
-            this.Btn_CPalestraCancelar.Text = "Cancelar";
-            this.Btn_CPalestraCancelar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.Btn_CPalestraCancelar.UseVisualStyleBackColor = true;
-            this.Btn_CPalestraCancelar.Click += new System.EventHandler(this.Btn_CPalestraCancelar_Click);
-            // 
-            // Btn_CPalestraGravar
-            // 
-            this.Btn_CPalestraGravar.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.Btn_CPalestraGravar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Btn_CPalestraGravar.Font = new System.Drawing.Font("Microsoft Tai Le", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Btn_CPalestraGravar.Image = global::Sistema_Tecweek.Properties.Resources.Gravar;
-            this.Btn_CPalestraGravar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.Btn_CPalestraGravar.Location = new System.Drawing.Point(502, 9);
-            this.Btn_CPalestraGravar.Name = "Btn_CPalestraGravar";
-            this.Btn_CPalestraGravar.Size = new System.Drawing.Size(105, 38);
-            this.Btn_CPalestraGravar.TabIndex = 14;
-            this.Btn_CPalestraGravar.Text = "Gravar";
-            this.Btn_CPalestraGravar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.Btn_CPalestraGravar.UseVisualStyleBackColor = true;
-            // 
-            // Txt_CPalestraPesquisarPrincipal
-            // 
-            this.Txt_CPalestraPesquisarPrincipal.ForeColor = System.Drawing.Color.Silver;
-            this.Txt_CPalestraPesquisarPrincipal.Location = new System.Drawing.Point(297, 40);
-            this.Txt_CPalestraPesquisarPrincipal.Name = "Txt_CPalestraPesquisarPrincipal";
-            this.Txt_CPalestraPesquisarPrincipal.Size = new System.Drawing.Size(186, 20);
-            this.Txt_CPalestraPesquisarPrincipal.TabIndex = 0;
-            this.Txt_CPalestraPesquisarPrincipal.Text = "Digite para pesquisar...";
-            this.Txt_CPalestraPesquisarPrincipal.Enter += new System.EventHandler(this.Txt_CPalestraPesquisarPrincipal_Enter);
-            this.Txt_CPalestraPesquisarPrincipal.Leave += new System.EventHandler(this.Txt_CPalestraPesquisarPrincipal_Leave);
             // 
             // Frm_CadastrarAlunoNaPalestra
             // 
