@@ -82,3 +82,22 @@ C:\Users\1090481823024\Desktop\Trabalhos GIT\Tecweek\TecweekOficial\Sistema Tecw
 C:\Users\1090481823024\Desktop\Trabalhos GIT\Tecweek\TecweekOficial\Sistema Tecweek\Sistema Tecweek\obj\Debug\Sistema Tecweek.csproj.GenerateResource.Cache
 C:\Users\Matheus\OneDrive - Fatec Centro Paula Souza\FATEC\TECWEEK\TECWEEK\Sistema Tecweek\Sistema Tecweek\obj\Debug\Sistema_Tecweek.frm_CadastroPalestra.resources
 C:\Users\Matheus\OneDrive - Fatec Centro Paula Souza\FATEC\TECWEEK\TECWEEK\Sistema Tecweek\Sistema Tecweek\obj\Debug\Sistema_Tecweek.Frm_CadastrarAlunoNaPalestra.resources
+C:\Users\1090481823024\Desktop\Github Projects\Tecweek\TecweekOficial\Sistema Tecweek\Sistema Tecweek\bin\Debug\Sistema Tecweek.exe.config
+C:\Users\1090481823024\Desktop\Github Projects\Tecweek\TecweekOficial\Sistema Tecweek\Sistema Tecweek\obj\Debug\Sistema Tecweek.exe
+C:\Users\1090481823024\Desktop\Github Projects\Tecweek\TecweekOficial\Sistema Tecweek\Sistema Tecweek\obj\Debug\Sistema Tecweek.pdb
+C:\Users\1090481823024\Desktop\Github Projects\Tecweek\TecweekOficial\Sistema Tecweek\Sistema Tecweek\bin\Debug\Sistema Tecweek.exe
+C:\Users\1090481823024\Desktop\Github Projects\Tecweek\TecweekOficial\Sistema Tecweek\Sistema Tecweek\bin\Debug\Sistema Tecweek.pdb
+C:\Users\1090481823024\Desktop\Github Projects\Tecweek\TecweekOficial\Sistema Tecweek\Sistema Tecweek\bin\Debug\Tecweek Modelo.dll
+C:\Users\1090481823024\Desktop\Github Projects\Tecweek\TecweekOficial\Sistema Tecweek\Sistema Tecweek\bin\Debug\TecweekDAL.dll
+C:\Users\1090481823024\Desktop\Github Projects\Tecweek\TecweekOficial\Sistema Tecweek\Sistema Tecweek\bin\Debug\TecweekDLL.dll
+C:\Users\1090481823024\Desktop\Github Projects\Tecweek\TecweekOficial\Sistema Tecweek\Sistema Tecweek\bin\Debug\Tecweek Modelo.pdb
+C:\Users\1090481823024\Desktop\Github Projects\Tecweek\TecweekOficial\Sistema Tecweek\Sistema Tecweek\bin\Debug\TecweekDAL.pdb
+C:\Users\1090481823024\Desktop\Github Projects\Tecweek\TecweekOficial\Sistema Tecweek\Sistema Tecweek\bin\Debug\TecweekDLL.pdb
+C:\Users\1090481823024\Desktop\Github Projects\Tecweek\TecweekOficial\Sistema Tecweek\Sistema Tecweek\obj\Debug\Sistema Tecweek.csprojResolveAssemblyReference.cache
+C:\Users\1090481823024\Desktop\Github Projects\Tecweek\TecweekOficial\Sistema Tecweek\Sistema Tecweek\obj\Debug\Sistema_Tecweek.Frm_CadastrarAlunoNaPalestra.resources
+C:\Users\1090481823024\Desktop\Github Projects\Tecweek\TecweekOficial\Sistema Tecweek\Sistema Tecweek\obj\Debug\Sistema_Tecweek.frm_CadastroPalestra.resources
+C:\Users\1090481823024\Desktop\Github Projects\Tecweek\TecweekOficial\Sistema Tecweek\Sistema Tecweek\obj\Debug\Sistema_Tecweek.frm_cadastroParticipantes.resources
+C:\Users\1090481823024\Desktop\Github Projects\Tecweek\TecweekOficial\Sistema Tecweek\Sistema Tecweek\obj\Debug\Sistema_Tecweek.frm_Escolaridade.resources
+C:\Users\1090481823024\Desktop\Github Projects\Tecweek\TecweekOficial\Sistema Tecweek\Sistema Tecweek\obj\Debug\Sistema_Tecweek.frm_telaPrincipal.resources
+C:\Users\1090481823024\Desktop\Github Projects\Tecweek\TecweekOficial\Sistema Tecweek\Sistema Tecweek\obj\Debug\Sistema_Tecweek.Properties.Resources.resources
+C:\Users\1090481823024\Desktop\Github Projects\Tecweek\TecweekOficial\Sistema Tecweek\Sistema Tecweek\obj\Debug\Sistema Tecweek.csproj.GenerateResource.Cache

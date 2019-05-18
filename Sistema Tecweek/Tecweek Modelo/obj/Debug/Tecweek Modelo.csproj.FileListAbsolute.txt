@@ -9,3 +9,8 @@ C:\Users\1090481823024\Desktop\Trabalhos GIT\Tecweek\TecweekOficial\Sistema Tecw
 C:\Users\1090481823024\Desktop\Trabalhos GIT\Tecweek\TecweekOficial\Sistema Tecweek\Tecweek Modelo\obj\Debug\Tecweek Modelo.csprojResolveAssemblyReference.cache
 C:\Users\1090481823024\Desktop\Trabalhos GIT\Tecweek\TecweekOficial\Sistema Tecweek\Tecweek Modelo\obj\Debug\Tecweek Modelo.dll
 C:\Users\1090481823024\Desktop\Trabalhos GIT\Tecweek\TecweekOficial\Sistema Tecweek\Tecweek Modelo\obj\Debug\Tecweek Modelo.pdb
+C:\Users\1090481823024\Desktop\Github Projects\Tecweek\TecweekOficial\Sistema Tecweek\Tecweek Modelo\bin\Debug\Tecweek Modelo.dll
+C:\Users\1090481823024\Desktop\Github Projects\Tecweek\TecweekOficial\Sistema Tecweek\Tecweek Modelo\bin\Debug\Tecweek Modelo.pdb
+C:\Users\1090481823024\Desktop\Github Projects\Tecweek\TecweekOficial\Sistema Tecweek\Tecweek Modelo\obj\Debug\Tecweek Modelo.csprojResolveAssemblyReference.cache
+C:\Users\1090481823024\Desktop\Github Projects\Tecweek\TecweekOficial\Sistema Tecweek\Tecweek Modelo\obj\Debug\Tecweek Modelo.dll
+C:\Users\1090481823024\Desktop\Github Projects\Tecweek\TecweekOficial\Sistema Tecweek\Tecweek Modelo\obj\Debug\Tecweek Modelo.pdb

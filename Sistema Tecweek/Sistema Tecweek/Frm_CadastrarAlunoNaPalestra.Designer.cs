@@ -87,6 +87,7 @@
             this.Btn_CPalestraGravar.Text = "Gravar";
             this.Btn_CPalestraGravar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.Btn_CPalestraGravar.UseVisualStyleBackColor = true;
+            this.Btn_CPalestraGravar.Click += new System.EventHandler(this.Btn_CPalestraGravar_Click);
             // 
             // Btn_CPalestraCancelar
             // 
@@ -137,6 +138,7 @@
             this.Btn_CPalestraExcluir.Text = "Excluir";
             this.Btn_CPalestraExcluir.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.Btn_CPalestraExcluir.UseVisualStyleBackColor = true;
+            this.Btn_CPalestraExcluir.Click += new System.EventHandler(this.Btn_CPalestraExcluir_Click);
             // 
             // Btn_CPalestraNovo
             // 
@@ -224,6 +226,7 @@
             this.GV_CPalestraPrincipal.Name = "GV_CPalestraPrincipal";
             this.GV_CPalestraPrincipal.Size = new System.Drawing.Size(734, 176);
             this.GV_CPalestraPrincipal.TabIndex = 2;
+            this.GV_CPalestraPrincipal.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.GV_CPalestraPrincipal_CellClick);
             // 
             // GV_CPalestraAlunos
             // 
@@ -259,6 +262,7 @@
             this.GV_CPalestraAlunos.Name = "GV_CPalestraAlunos";
             this.GV_CPalestraAlunos.Size = new System.Drawing.Size(360, 190);
             this.GV_CPalestraAlunos.TabIndex = 3;
+            this.GV_CPalestraAlunos.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.GV_CPalestraAlunos_CellClick);
             // 
             // CB_CPalestraPalestras
             // 

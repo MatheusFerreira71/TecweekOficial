@@ -61,7 +61,7 @@ namespace TecweekDAL
         {
             DataTable tabela = new DataTable();
             SqlDataAdapter da = new SqlDataAdapter("Select C.Codigo, Par.Nome, Par.CPF, Pal.Nome as Palestra, " +
-                "Pal.Data_Hora, Pal.Max_Alunos, C.Cod_Palestra from ((TBCadastro_Palestra As C inner " +
+                "Pal.Data_Hora, Pal.Max_Alunos, C.Cod_Palestra,  Par.Codigo, C.Cod_Aluno As Cod_Participante from ((TBCadastro_Palestra As C inner " +
                 "join TBPalestra As Pal on C.Cod_Palestra = Pal.Codigo) inner join TBParticipante As " +
                 "Par ON C.Cod_Aluno = Par.Codigo) where Par.Nome like '%" + valor + "%' OR Par.CPF like '%" + valor + "%' OR Pal.Nome like '%" + valor +
                 "%' OR Pal.Data_Hora like '%" + valor + "%' OR Pal.Max_Alunos like '%" + valor + "%'",
@@ -88,39 +88,6 @@ namespace TecweekDAL
             }
             conexao.Desconectar();
             return modelo;
-        }
-        public bool HaVagas(int Palestra)
-        {
-            DALConexoes cx = new DALConexoes(DadosDaConexão.StringDeConexão);
-            //Pegando as vagas atuais.
-            SqlCommand cmd = new SqlCommand()
-            {
-                Connection = cx.ObjetoConexao,
-                CommandText = "select count(*) from TBCadastro_Palestra where Cod_Palestra = " + Palestra.ToString() + ";"
-            };
-            cx.Conectar();
-            SqlDataReader readerAtuais = cmd.ExecuteReader();
-            readerAtuais.Read();
-            int vagasOcupadas = Convert.ToInt32(readerAtuais.GetValue(0));
-            cx.Desconectar();
-
-            //Pegando o número máximo de vagas na palestra. 
-            cmd.CommandText = "Select Max_Alunos from TBPalestra where Codigo = " + Palestra.ToString() + ";";
-            cx.Conectar();
-            SqlDataReader readerMax = cmd.ExecuteReader();
-            readerMax.Read();
-            int MaxVagas = Convert.ToInt32(readerMax.GetValue(0));
-            cx.Desconectar();
-
-            //Verificando se há vagas.
-            if (vagasOcupadas == MaxVagas)
-            {
-                return false;
-            }
-            else
-            {
-                return true;
-            }
         }
     }
 }

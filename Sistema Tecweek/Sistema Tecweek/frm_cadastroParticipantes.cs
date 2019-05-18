@@ -291,44 +291,50 @@ namespace Sistema_Tecweek
         {
             try
             {
-                if (this.CPF_Valido(Txt_partiCPF.Text)) //Verifica se o CPF é válido.
+                if (Txt_partiCPF.TextLength < 11)
                 {
-                    ModeloParticipante modelo = new ModeloParticipante
+                    MessageBox.Show("CPF precisa de 11 números!", "ERRO!", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }else
+                {
+                    if (this.CPF_Valido(Txt_partiCPF.Text)) //Verifica se o CPF é válido.
                     {
-                        ParticipanteNome = Txt_partiNome.Text,
-                        ParticipanteCPF = Txt_partiCPF.Text,
-                        ParticipanteDataNasc = dtp_partiNascimento.Value,
-                        ParticipanteCodEscolaridade = Convert.ToInt32(Cb_partiEscolaridade.SelectedValue),
-                        ParticipanteEmail = Txt_partiEmail.Text,
-                        ParticipanteTelefone = Txt_partiTelefone.Text
-                    };
-                    DALConexoes cx = new DALConexoes(DadosDaConexão.StringDeConexão); //Objetos para gravar os dados;
-                    BLLParticipante BLLParti = new BLLParticipante(cx);
+                        ModeloParticipante modelo = new ModeloParticipante
+                        {
+                            ParticipanteNome = Txt_partiNome.Text,
+                            ParticipanteCPF = Txt_partiCPF.Text,
+                            ParticipanteDataNasc = dtp_partiNascimento.Value,
+                            ParticipanteCodEscolaridade = Convert.ToInt32(Cb_partiEscolaridade.SelectedValue),
+                            ParticipanteEmail = Txt_partiEmail.Text,
+                            ParticipanteTelefone = Txt_partiTelefone.Text
+                        };
+                        DALConexoes cx = new DALConexoes(DadosDaConexão.StringDeConexão); //Objetos para gravar os dados;
+                        BLLParticipante BLLParti = new BLLParticipante(cx);
 
-                    if (this.operacao == "inserir") // Cadastra no banco a escolaridade.
-                    {
-                        BLLParti.Incluir(modelo);
-                        MessageBox.Show("Gravado com Sucesso! Código: " + modelo.ParticipanteCod.ToString(), "Informativo",
-                            MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
-                        // Atualiza a tabela no gridview.
-                        this.AtualizaTabela();
+                        if (this.operacao == "inserir") // Cadastra no banco a escolaridade.
+                        {
+                            BLLParti.Incluir(modelo);
+                            MessageBox.Show("Gravado com Sucesso! Código: " + modelo.ParticipanteCod.ToString(), "Informativo",
+                                MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
+                            // Atualiza a tabela no gridview.
+                            this.AtualizaTabela();
+                        }
+                        else // Altera no banco a escolaridade
+                        {
+                            int linha = dataGridView1.CurrentRow.Index;
+                            int cod = Convert.ToInt32(dataGridView1.Rows[linha].Cells[0].Value.ToString());
+                            modelo.ParticipanteCod = cod;
+                            BLLParti.Alterar(modelo);
+                            MessageBox.Show("Editado com Sucesso!", "Informativo", MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
+                            // Atualiza a tabela no gridview.
+                            this.AtualizaTabela();
+                        }
+                        this.LimpaTela();
+                        this.AlterarBotao(false);
                     }
-                    else // Altera no banco a escolaridade
+                    else // Se o CPF não for válido!
                     {
-                        int linha = dataGridView1.CurrentRow.Index;
-                        int cod = Convert.ToInt32(dataGridView1.Rows[linha].Cells[0].Value.ToString());
-                        modelo.ParticipanteCod = cod;
-                        BLLParti.Alterar(modelo);
-                        MessageBox.Show("Editado com Sucesso!", "Informativo", MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
-                        // Atualiza a tabela no gridview.
-                        this.AtualizaTabela();
+                        MessageBox.Show("CPF INVÁLIDO!", "ERRO!", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     }
-                    this.LimpaTela();
-                    this.AlterarBotao(false);
-                }
-                else // Se o CPF não for válido!
-                {
-                    MessageBox.Show("CPF INVÁLIDO!", "ERRO!", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
             }
             catch (Exception ex)

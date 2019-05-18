@@ -27,3 +27,12 @@ C:\Users\1090481823024\Desktop\Trabalhos GIT\Tecweek\TecweekOficial\Sistema Tecw
 C:\Users\1090481823024\Desktop\Trabalhos GIT\Tecweek\TecweekOficial\Sistema Tecweek\Sistema Tecweek\TecweekDLL\obj\Debug\TecweekBLL.csprojResolveAssemblyReference.cache
 C:\Users\1090481823024\Desktop\Trabalhos GIT\Tecweek\TecweekOficial\Sistema Tecweek\Sistema Tecweek\TecweekDLL\obj\Debug\TecweekDLL.dll
 C:\Users\1090481823024\Desktop\Trabalhos GIT\Tecweek\TecweekOficial\Sistema Tecweek\Sistema Tecweek\TecweekDLL\obj\Debug\TecweekDLL.pdb
+C:\Users\1090481823024\Desktop\Github Projects\Tecweek\TecweekOficial\Sistema Tecweek\Sistema Tecweek\TecweekDLL\bin\Debug\TecweekDLL.dll
+C:\Users\1090481823024\Desktop\Github Projects\Tecweek\TecweekOficial\Sistema Tecweek\Sistema Tecweek\TecweekDLL\bin\Debug\TecweekDLL.pdb
+C:\Users\1090481823024\Desktop\Github Projects\Tecweek\TecweekOficial\Sistema Tecweek\Sistema Tecweek\TecweekDLL\bin\Debug\Tecweek Modelo.dll
+C:\Users\1090481823024\Desktop\Github Projects\Tecweek\TecweekOficial\Sistema Tecweek\Sistema Tecweek\TecweekDLL\bin\Debug\TecweekDAL.dll
+C:\Users\1090481823024\Desktop\Github Projects\Tecweek\TecweekOficial\Sistema Tecweek\Sistema Tecweek\TecweekDLL\bin\Debug\Tecweek Modelo.pdb
+C:\Users\1090481823024\Desktop\Github Projects\Tecweek\TecweekOficial\Sistema Tecweek\Sistema Tecweek\TecweekDLL\bin\Debug\TecweekDAL.pdb
+C:\Users\1090481823024\Desktop\Github Projects\Tecweek\TecweekOficial\Sistema Tecweek\Sistema Tecweek\TecweekDLL\obj\Debug\TecweekBLL.csprojResolveAssemblyReference.cache
+C:\Users\1090481823024\Desktop\Github Projects\Tecweek\TecweekOficial\Sistema Tecweek\Sistema Tecweek\TecweekDLL\obj\Debug\TecweekDLL.dll
+C:\Users\1090481823024\Desktop\Github Projects\Tecweek\TecweekOficial\Sistema Tecweek\Sistema Tecweek\TecweekDLL\obj\Debug\TecweekDLL.pdb

@@ -21,3 +21,10 @@ C:\Users\1090481823024\Desktop\Trabalhos GIT\Tecweek\TecweekOficial\Sistema Tecw
 C:\Users\1090481823024\Desktop\Trabalhos GIT\Tecweek\TecweekOficial\Sistema Tecweek\Sistema Tecweek\TecweekDAL\obj\Debug\TecweekDAL.csprojResolveAssemblyReference.cache
 C:\Users\1090481823024\Desktop\Trabalhos GIT\Tecweek\TecweekOficial\Sistema Tecweek\Sistema Tecweek\TecweekDAL\obj\Debug\TecweekDAL.dll
 C:\Users\1090481823024\Desktop\Trabalhos GIT\Tecweek\TecweekOficial\Sistema Tecweek\Sistema Tecweek\TecweekDAL\obj\Debug\TecweekDAL.pdb
+C:\Users\1090481823024\Desktop\Github Projects\Tecweek\TecweekOficial\Sistema Tecweek\Sistema Tecweek\TecweekDAL\bin\Debug\TecweekDAL.dll
+C:\Users\1090481823024\Desktop\Github Projects\Tecweek\TecweekOficial\Sistema Tecweek\Sistema Tecweek\TecweekDAL\bin\Debug\TecweekDAL.pdb
+C:\Users\1090481823024\Desktop\Github Projects\Tecweek\TecweekOficial\Sistema Tecweek\Sistema Tecweek\TecweekDAL\bin\Debug\Tecweek Modelo.dll
+C:\Users\1090481823024\Desktop\Github Projects\Tecweek\TecweekOficial\Sistema Tecweek\Sistema Tecweek\TecweekDAL\bin\Debug\Tecweek Modelo.pdb
+C:\Users\1090481823024\Desktop\Github Projects\Tecweek\TecweekOficial\Sistema Tecweek\Sistema Tecweek\TecweekDAL\obj\Debug\TecweekDAL.csprojResolveAssemblyReference.cache
+C:\Users\1090481823024\Desktop\Github Projects\Tecweek\TecweekOficial\Sistema Tecweek\Sistema Tecweek\TecweekDAL\obj\Debug\TecweekDAL.dll
+C:\Users\1090481823024\Desktop\Github Projects\Tecweek\TecweekOficial\Sistema Tecweek\Sistema Tecweek\TecweekDAL\obj\Debug\TecweekDAL.pdb

@@ -10,7 +10,7 @@ namespace TecweekDAL
     {
         public static String StringDeConexão
         {
-            get { return "Data Source=PC-ALTERDATA\\MSSQLSERVER01;Initial Catalog=bdTecweek3;Integrated Security=True"; }
+            get { return "Data Source=LAB2-33;Initial Catalog=bdTecweek;Integrated Security=True"; }
         }
     }
 }
