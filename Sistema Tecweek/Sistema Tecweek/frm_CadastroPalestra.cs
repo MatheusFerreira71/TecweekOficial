@@ -214,6 +214,7 @@ namespace Sistema_Tecweek
 
                 this.LimpaTela();
                 this.AlterarBotao(false);
+                this.operacao = "";
 
             }
             catch (Exception ex)

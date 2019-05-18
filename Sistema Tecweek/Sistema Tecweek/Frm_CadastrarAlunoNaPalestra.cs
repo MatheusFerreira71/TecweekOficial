@@ -342,6 +342,7 @@ namespace Sistema_Tecweek
                     }
                     this.LimpaTela();
                     this.AlterarBotao(false);
+                    this.operacao = "";
                 }
                 else // Se o CPF não for válido!
                 {
